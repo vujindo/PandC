@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<header class="py-3 mb-3 border-bottom">
+<header class="py-3 mb-3border-bottom ">	
 	<div class="container-fluid d-grid gap-3 align-items-center">
 		<div
 			class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -18,16 +18,17 @@
 				<li><a href="#" class="nav-link px-2 link-dark">サポート</a></li>
 			</ul>
 
-			<form class="col-12 col-sm-5 mb-3 mb-lg-0 me-lg-3">
+			<form class="col-12 col-sm-4 mb-3 mb-lg-0 me-lg-3">
 				<input type="search" class="form-control" placeholder="Search..."
 					aria-label="Search">
 			</form>
 
-			<div class="text-end">
-				<button type="button" class="btn btn-outline-primary me-2">カート</button>
-				<button type="button" class="btn btn-primary">ログイン</button>
+			<div class="text-end btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn text-dark btn-outline-light">カート</button>
+				<button type="button" class="btn text-dark btn-outline-light"><a href="login.jsp" class="nav-link link-dark">ログイン</a></button>
+				<button type="button" class="btn text-dark btn-outline-light">JP/JA</button>
 			</div>
-
+		
 <!-- 			<div class="dropdown text-end">
 				<a href="#"
 					class="d-block link-dark text-decoration-none dropdown-toggle"
