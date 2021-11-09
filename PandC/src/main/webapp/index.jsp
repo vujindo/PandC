@@ -18,6 +18,7 @@
 	crossorigin="anonymous">
 	
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="css/carousel.css" rel="stylesheet">
 
 </head>
@@ -48,8 +49,6 @@
 					<div class="container">
 						<div class="carousel-caption text-start text-dark">
 							<h1>初心者に向け</h1>
-							<p>Some representative placeholder content for the first
-								slide of the carousel.</p>
 							<p>
 								<a class="btn btn-lg btn-primary" href="#">今、すぐ調査に</a>
 							</p>
@@ -66,7 +65,7 @@
 
 
 					<div class="container">
-						<div class="carousel-caption text-end">
+						<div class="carousel-caption">
 							<p>
 								<a class="btn btn-lg btn-warning" href="#">ゲーミングPCビルド</a>
 							</p>
@@ -90,8 +89,8 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			
-				</div>
 			<button class="carousel-control-prev" type="button"
 					data-bs-target="#myCarousel" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -103,7 +102,11 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-	
+		<hr>
+		<div class="container-fluid">
+			<h2>ご利用いただき、ありがとうございます</h2>
+		</div>
+		
 	</main>
 
 	<jsp:include page="views/layouts/footer.jsp" />
