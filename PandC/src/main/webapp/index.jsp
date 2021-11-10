@@ -50,7 +50,7 @@
 						<div class="carousel-caption text-start text-dark">
 							<h1>初心者に向け</h1>
 							<p>
-								<a class="btn btn-lg btn-primary" href="#">今、すぐ調査に</a>
+								<a class="btn btn-lg btn-primary" href="starter_guide/form_01.jsp">今、すぐ調査に</a>
 							</p>
 						</div>
 					</div>

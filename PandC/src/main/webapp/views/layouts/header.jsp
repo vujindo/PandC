@@ -4,18 +4,45 @@
 	<div class="container-fluid d-grid gap-3 align-items-center">
 		<div
 			class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-			<a href="index.jsp"
+			<a href="${pageContext.request.contextPath}/index.jsp"
 				class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-				<img src="img/P&C_logo.png" class="bi me-2" width="65" height="55"
+				<img src="${pageContext.request.contextPath}/img/P&C_logo.png" class="bi me-2" width="65" height="55"
 				role="img" aria-label="Bootstrap">
 			</a>
 
 			<ul
 				class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li><a href="index.jsp" class="nav-link px-2 link-secondary">ホーム</a></li>
-				<li><a href="#" class="nav-link px-2 link-dark">製品</a></li>
-				<li><a href="#" class="nav-link px-2 link-dark">サービス</a></li>
-				<li><a href="#" class="nav-link px-2 link-dark">サポート</a></li>
+				<li><a href="${pageContext.request.contextPath}/index.jsp" class="nav-link px-2 link-secondary">ホーム</a></li>
+				<div class="dropdown">
+					<button class="btn" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">製品</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">CPU</a></li>
+						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
+						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<button class="btn" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">サービス</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">CPU</a></li>
+						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
+						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<button class="btn" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">サポート</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">CPU</a></li>
+						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
+						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+					</ul>
+				</div>
 			</ul>
 
 			<form class="col-12 col-sm-4 mb-3 mb-lg-0 me-lg-3">
@@ -24,8 +51,8 @@
 			</form>
 
 			<div class="text-end btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn text-dark btn-outline-light">カート</button>
-				<button type="button" class="btn text-dark btn-outline-light"><a href="login.jsp" class="nav-link link-dark">ログイン</a></button>
+				<button type="button" class="btn">カート</button>
+				<button type="button" class="btn"><a href="${pageContext.request.contextPath}/login.jsp" class="nav-link link-dark">ログイン</a></button>
 				<button type="button" class="btn text-dark btn-outline-light">JP/JA</button>
 			</div>
 		
