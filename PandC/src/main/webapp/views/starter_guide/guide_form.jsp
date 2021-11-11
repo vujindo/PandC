@@ -18,19 +18,29 @@
 	crossorigin="anonymous">
 	
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="css/carousel.css" rel="stylesheet">
 
 </head>
+
 <body class="d-flex flex-column h-100">
 
-	<jsp:include page="../views/layouts/header.jsp" />
-	
+	<jsp:include page="../layouts/header.jsp" />
+
 	<main>
-	
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">An item</li>
+			<li class="list-group-item">A second item</li>
+			<li class="list-group-item">A third item</li>
+			<li class="list-group-item">A fourth item</li>
+			<li class="list-group-item">And a fifth one</li>
+		</ul>
+
 	</main>
-	
-	<jsp:include page="../views/layouts/footer.jsp" />
-	
+
+	<jsp:include page="../layouts/footer.jsp" />
+
 </body>
+
 </html>

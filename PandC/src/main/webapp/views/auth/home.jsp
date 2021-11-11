@@ -24,7 +24,7 @@
 </head>
 <body class="d-flex flex-column h-100">
 
-	<jsp:include page="views/layouts/header.jsp" />
+	<jsp:include page="../layouts/header.jsp" />
 
 	<main class="flex-shrink-0">
 		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -67,7 +67,7 @@
 					<div class="container">
 						<div class="carousel-caption">
 							<p>
-								<a class="btn btn-lg btn-warning" href="views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
+								<a class="btn btn-lg btn-warning" href="views/gaming_pc/gaming_pc.jsp">ゲーミングPCビルド</a>
 							</p>
 						</div>
 					</div>
@@ -109,7 +109,7 @@
 		
 	</main>
 
-	<jsp:include page="views/layouts/footer.jsp" />
+	<jsp:include page="../layouts/footer.jsp" />
 	
 </body>
 </html>

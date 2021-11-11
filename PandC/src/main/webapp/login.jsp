@@ -45,7 +45,8 @@
 			</div>
 			<button class="w-100 btn btn-lg btn-primary my-2" type="submit">サインイン</button>
 			<button class="w-100 btn btn-lg btn-outline-primary" type="submit">アカウントの新規作成</button>
-			<p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+			<button class="w-100 btn btn-lg btn-outline-primary my-2" type="submit">法人のアカウントの新規作成</button>
+			<p class="mt-5 mb-3 text-muted">&copy; 2021 CBL ,Inc. All rights reserved.</p>
 		</form>
 	</main>
 </body>
