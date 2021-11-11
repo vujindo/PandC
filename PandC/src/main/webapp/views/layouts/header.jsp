@@ -18,9 +18,13 @@
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
 						aria-expanded="false">製品</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="#">CPU</a></li>
 						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
+						<li><a class="dropdown-item" href="#">デスクトップ</a></li>
+						<li><a class="dropdown-item" href="#">ゲーミング</a></li>
+						<li><a class="dropdown-item" href="#">タブレット</a></li>
+						<li><a class="dropdown-item" href="#">モニター</a></li>
 						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+						<li><a class="dropdown-item" href="#">すべての商品の表示</a></li>
 					</ul>
 				</div>
 				<div class="dropdown">
@@ -28,9 +32,9 @@
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
 						aria-expanded="false">サービス</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="#">CPU</a></li>
-						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
-						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+						<li><a class="dropdown-item" href="#">初心者向けサービス</a></li>
+						<li><a class="dropdown-item" href="#">PCセットアップ</a></li>
+						<li><a class="dropdown-item" href="#">法人のお客様向けサービス</a></li>
 					</ul>
 				</div>
 				<div class="dropdown">
@@ -38,9 +42,9 @@
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
 						aria-expanded="false">サポート</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="#">CPU</a></li>
-						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
-						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+						<li><a class="dropdown-item" href="#"></a></li>
+						<li><a class="dropdown-item" href="#"></a></li>
+						<li><a class="dropdown-item" href="#">お問い合わせ</a></li>
 					</ul>
 				</div>
 			</ul>
@@ -51,11 +55,11 @@
 			</form>
 
 			<div class="text-end btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn">カート</button>
-				<button type="button" class="btn"><a href="${pageContext.request.contextPath}/login.jsp" class="nav-link link-dark">ログイン</a></button>
-				<button type="button" class="btn text-dark btn-outline-light">JP/JA</button>
+				<button type="button" class="btn text-dark">カート</button>
+				<button type="button" class="btn text-dark"><a href="${pageContext.request.contextPath}/login.jsp" class="nav-link link-dark">ログイン</a></button>
+				<button type="button" class="btn text-dark">JP/JA</button>
 			</div>
-		
+			
 <!-- 			<div class="dropdown text-end">
 				<a href="#"
 					class="d-block link-dark text-decoration-none dropdown-toggle"
