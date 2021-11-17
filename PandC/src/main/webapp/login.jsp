@@ -18,36 +18,90 @@
 	crossorigin="anonymous">
 	
 </script>
-<link href="css/login.css" rel="stylesheet">
 
 </head>
-<body class="text-center">
-	<main class="form-signin">
-		<form>
-			<a href="index.jsp"> <img class="mb-4" src="img/P&C_logo.png"
-				alt="" width="100" height="100" role="img" aria-label="Bootstrap">
-			</a>
-			<h1 class="h3 mb-3 fw-normal">サインイン</h1>
+<body>
 
-			<div class="form-floating">
-				<input type="email" class="form-control" id="floatingInput"
-					placeholder="name@example.com"> <label for="floatingInput">メールアドレス</label>
-			</div>
-			<div class="form-floating">
-				<input type="password" class="form-control" id="floatingPassword"
-					placeholder="Password"> <label for="floatingPassword">パスワード</label>
+	<header class="site-header text-center py-1">
+		<a href="index.jsp"> <img class="m-4" src="img/P&C_logo.png"
+			alt="" width="80" height="80" role="img" aria-label="Bootstrap">
+		</a>
+	</header>
+
+	<main class="col-lg-10 mx-auto p-1 py-md-3">
+		<div class="row g-5">
+			<div class="col-md-6 border p-4">
+				<h2>サインイン</h2>
+				<form>
+					<div class="form-floating">
+						<input type="email" class="form-control w-75" id="floatingInput"
+							placeholder="name@example.com"> <label
+							for="floatingInput">メールアドレス</label>
+					</div>
+					<div class="form-floating">
+						<input type="password" class="form-control w-75 my-2"
+							id="floatingPassword" placeholder="Password"> <label
+							for="floatingPassword">パスワード</label>
+					</div>
+
+					<div class="checkbox mb-3">
+						<label> <input type="checkbox" value="remember-me">
+							Remember me
+						</label>
+					</div>
+					<button class="w-50 btn btn-outline-primary my-2" type="submit">サインイン</button>
+				</form>
 			</div>
 
-			<div class="checkbox mb-3">
-				<label> <input type="checkbox" value="remember-me">
-					Remember me
-				</label>
+			<div
+				class="col-md-6 bg-light p-4 border-top border-end border-bottom">
+				<h2>アカウントの作成</h2>
+				<form>
+					<div class="form-floating">
+						<input type="text" class="form-control" id="floatingInput"
+							placeholder=""> <label for="floatingInput">性<span
+							class="text-danger">*</span></label>
+					</div>
+					<div class="form-floating">
+						<input type="text" class="form-control my-2" id="floatingInput"
+							placeholder=""> <label for="floatingInput">名<span
+							class="text-danger">*</span></label>
+					</div>
+					<div class="form-floating">
+						<input type="email" class="form-control my-2" id="floatingInput"
+							placeholder=""> <label for="floatingInput">メールアドレス<span
+							class="text-danger">*</span></label>
+					</div>
+					<div class="form-floating">
+						<input type="password" class="form-control my-2"
+							id="floatingPassword" placeholder=""> <label
+							for="floatingPassword">パスワード<span class="text-danger">*</span></label>
+					</div>
+					<div class="form-floating">
+						<input type="password" class="form-control my-2"
+							id="floatingPassword" placeholder=""> <label
+							for="floatingPassword">パスワード（確認)<span class="text-danger">*</span></label>
+					</div>
+					<div>
+						<p class="text-muted text-decoration-underline">
+							<span class="text-danger">*</span>パスワードの長さは8文字以上にする必要があり、その中には1つの大文字、1つの小文字、1つの数字が含まれている必要があります。
+							<br>・Eメールアドレスに以下の記号はご使用いただけません。! # $ % & * + / = ? ^ { | } ~
+						</p>
+					</div>
+
+					<div class="checkbox mb-3">
+						<label> <input type="checkbox" value="remember-me">
+							自社のポリシーを同意する。
+						</label>
+					</div>
+					<button class="w-100 btn btn-lg btn-primary my-2" type="button"">アカウントの作成</button>
+					<button class="w-100 btn btn-lg btn-outline-primary my-2"
+						type="submit">法人のアカウントの新規作成</button>
+					<p class="mt-5 mb-3 text-muted">&copy; 2021 CBL ,Inc. All
+						rights reserved.</p>
+				</form>
 			</div>
-			<button class="w-100 btn btn-lg btn-primary my-2" type="submit">サインイン</button>
-			<button class="w-100 btn btn-lg btn-outline-primary" type="submit">アカウントの新規作成</button>
-			<button class="w-100 btn btn-lg btn-outline-primary my-2" type="submit">法人のアカウントの新規作成</button>
-			<p class="mt-5 mb-3 text-muted">&copy; 2021 CBL ,Inc. All rights reserved.</p>
-		</form>
+		</div>
 	</main>
 </body>
 </html>
