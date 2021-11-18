@@ -18,7 +18,8 @@
 	crossorigin="anonymous">
 	
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="css/carousel.css" rel="stylesheet">
 
 </head>
@@ -50,7 +51,8 @@
 						<div class="carousel-caption text-start text-dark">
 							<h1>初心者に向け</h1>
 							<p>
-								<a class="btn btn-lg btn-primary" href="views/starter_guide/guide_form.jsp">今、すぐ調査に</a>
+								<a class="btn btn-lg btn-primary"
+									href="views/starter_guide/question1.jsp">今、すぐ調査に</a>
 							</p>
 						</div>
 					</div>
@@ -61,22 +63,25 @@
 						aria-hidden="true" preserveAspectRatio="xMidYMid slice"
 						focusable="false">
 					<rect width="100%" height="100%" fill="#777" />
-						</img>
+					</img>
 
 
 					<div class="container">
 						<div class="carousel-caption">
 							<p>
-								<a class="btn btn-lg btn-warning" href="views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
+								<a class="btn btn-lg btn-warning"
+									href="views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<img class="bd-placeholder-img" width="100%" height="100%"
-							src="https://i.dell.com/sites/csimages/banner_imagery/all/fy22q04wk01_sb_rotation_slot1_1400x4722129291229354556.jpg?width=1600&format=jpg&quality=80" aria-hidden="true"
-							preserveAspectRatio="xMidYMid slice" focusable="false">
-						<rect width="100%" height="100%" fill="#777" /></img>
+						src="https://i.dell.com/sites/csimages/banner_imagery/all/fy22q04wk01_sb_rotation_slot1_1400x4722129291229354556.jpg?width=1600&format=jpg&quality=80"
+						aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+						focusable="false">
+					<rect width="100%" height="100%" fill="#777" />
+					</img>
 
 					<div class="container">
 						<div class="carousel-caption text-start text-dark">
@@ -87,17 +92,16 @@
 								<a class="btn btn-lg btn-primary" href="login.jsp">法人はこちら</a>
 							</p>
 						</div>
-					</div>
-				</div>
+					</div></div>
 			</div>
-			
+
 			<button class="carousel-control-prev" type="button"
-					data-bs-target="#myCarousel" data-bs-slide="prev">
+				data-bs-target="#myCarousel" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
 			<button class="carousel-control-next" type="button"
-					data-bs-target="#myCarousel" data-bs-slide="next">
+				data-bs-target="#myCarousel" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
@@ -106,10 +110,10 @@
 		<div class="container-fluid">
 			<h2>ご利用いただき、ありがとうございます</h2>
 		</div>
-		
+
 	</main>
 
 	<jsp:include page="views/layouts/footer.jsp" />
-	
+
 </body>
 </html>

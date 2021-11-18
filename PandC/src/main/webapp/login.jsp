@@ -22,11 +22,11 @@
 </head>
 <body>
 
-	<header class="site-header text-center py-1">
-		<a href="index.jsp"> <img class="m-4" src="img/P&C_logo.png"
+	<header class="site-header text-center">
+		<a href="index.jsp"> <img class="mt-4" src="img/P&C_logo.png"
 			alt="" width="80" height="80" role="img" aria-label="Bootstrap">
 		</a>
-	</header>
+	</header><hr>
 
 	<main class="col-lg-10 mx-auto p-1 py-md-3">
 		<div class="row g-5">
@@ -94,8 +94,8 @@
 							自社のポリシーを同意する。
 						</label>
 					</div>
-					<button class="w-100 btn btn-lg btn-primary my-2" type="button"">アカウントの作成</button>
-					<button class="w-100 btn btn-lg btn-outline-primary my-2"
+					<button class="w-100 btn btn-primary my-2" type="button"">アカウントの作成</button>
+					<button class="w-100 btn btn-outline-primary my-2"
 						type="submit">法人のアカウントの新規作成</button>
 					<p class="mt-5 mb-3 text-muted">&copy; 2021 CBL ,Inc. All
 						rights reserved.</p>
@@ -103,5 +103,8 @@
 			</div>
 		</div>
 	</main>
+	
+	<jsp:include page="views/layouts/footer.jsp" />
+	
 </body>
 </html>

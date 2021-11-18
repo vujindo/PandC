@@ -23,24 +23,32 @@
 <link href="css/carousel.css" rel="stylesheet">
 
 </head>
-
 <body class="d-flex flex-column h-100">
 
 	<jsp:include page="../layouts/header.jsp" />
 
-	<main>
-		<ul class="list-group list-group-flush">
-			<li class="list-group-item">An item</li>
-			<li class="list-group-item">A second item</li>
-			<li class="list-group-item">A third item</li>
-			<li class="list-group-item">A fourth item</li>
-			<li class="list-group-item">And a fifth one</li>
-		</ul>
+	<main class="flex-shrink-0 text-center p-4 m-4">
+		<div class="">
+			<h1>あなたに最も適切商品は。。。</h1>
+		</div>
 
+		<div class="card mx-auto" style="width: 20rem">
+			<img
+				src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+				class="card-img-top px-4">
+			<div class="card-body">
+				<h5 class="card-title">DELL ALIENWARE AW3821DW
+					37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+				<p class="card-text text-start">
+					標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br> 税込・配送料込
+				</p>
+				<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+					class="btn btn-outline-primary">比較</a>
+			</div>
+		</div>
 	</main>
 
 	<jsp:include page="../layouts/footer.jsp" />
 
 </body>
-
 </html>
