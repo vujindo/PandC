@@ -30,7 +30,7 @@
 
 	<main class="col-lg-10 mx-auto p-1 py-md-3">
 		<div class="row g-5">
-			<div class="col-md-6 border p-4">
+			<div class="col-md-6 border rounded-start p-4">
 				<h2>サインイン</h2>
 				<form>
 					<div class="form-floating">
@@ -54,7 +54,7 @@
 			</div>
 
 			<div
-				class="col-md-6 bg-light p-4 border-top border-end border-bottom">
+				class="col-md-6 bg-light p-4 border-top border-end border-bottom rounded-end">
 				<h2>アカウントの作成</h2>
 				<form>
 					<div class="form-floating">

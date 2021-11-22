@@ -32,7 +32,7 @@
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
 						aria-expanded="false">サービス</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="#">初心者向けサービス</a></li>
+						<li><a class="dropdown-item" href="${pageContext.request.contextPath}/views/starter_guide/question1.jsp">初心者向けサービス</a></li>
 						<li><a class="dropdown-item" href="#">PCセットアップ</a></li>
 						<li><a class="dropdown-item" href="#">法人のお客様向けサービス</a></li>
 					</ul>

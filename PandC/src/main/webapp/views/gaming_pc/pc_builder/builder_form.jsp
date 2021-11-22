@@ -52,7 +52,7 @@
 						<td></td>
 						<td></td>
 					</tr>
-					<tr class="align-bottom">
+					<tr>
 						<td>マザーボード</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
 						<td></td>
@@ -61,10 +61,10 @@
 					<tr>
 						<td>CPUクーラー</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
-						<td class="align-top">This cell is aligned to the top.</td>
+						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
-					<tr class="align-bottom">
+					<tr>
 						<td>ケース</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
 						<td></td>
@@ -73,10 +73,10 @@
 					<tr>
 						<td>グラフィックカード</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
-						<td class="align-top">This cell is aligned to the top.</td>
+						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
-					<tr class="align-bottom">
+					<tr>
 						<td>RAM</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
 						<td></td>
@@ -85,10 +85,10 @@
 					<tr>
 						<td>ストレージ</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
-						<td class="align-top">This cell is aligned to the top.</td>
+						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
-					<tr class="align-bottom">
+					<tr>
 						<td>ケースクーラー</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
 						<td></td>
@@ -97,19 +97,19 @@
 					<tr>
 						<td>電源ユニット</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
-						<td class="align-top">This cell is aligned to the top.</td>
+						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
-					<tr class="align-bottom">
+					<tr class="">
 						<td>モニター</td>
 						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
 						<td></td>
 						<td></td>
 					</tr>
-					<tr class="table-dark">
+					<tr class="table-dark align-bottom">
 						<td>トータル</td>
 						<td></td>
-						<td class="align-top">This cell is aligned to the top.</td>
+						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
 				</tbody>
