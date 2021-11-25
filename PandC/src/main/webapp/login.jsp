@@ -32,7 +32,7 @@
 		<div class="row g-5">
 			<div class="col-md-6 border rounded-start p-4">
 				<h2>サインイン</h2>
-				<form>
+				<form action="views/auth/home.jsp" method="">
 					<div class="form-floating">
 						<input type="email" class="form-control w-75" id="floatingInput"
 							placeholder="name@example.com"> <label

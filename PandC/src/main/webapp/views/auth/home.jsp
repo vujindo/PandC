@@ -18,13 +18,14 @@
 	crossorigin="anonymous">
 	
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="css/carousel.css" rel="stylesheet">
 
 </head>
 <body class="d-flex flex-column h-100">
 
-	<jsp:include page="../layouts/header.jsp" />
+	<jsp:include page="../layouts/header_user.jsp" />
 
 	<main class="flex-shrink-0">
 		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -50,7 +51,8 @@
 						<div class="carousel-caption text-start text-dark">
 							<h1>初心者に向け</h1>
 							<p>
-								<a class="btn btn-lg btn-primary" href="views/starter_guide/guide_form.jsp">今、すぐ調査に</a>
+								<a class="btn btn-lg btn-primary"
+									href="views/starter_guide/question1.jsp">今、すぐ調査に</a>
 							</p>
 						</div>
 					</div>
@@ -61,22 +63,25 @@
 						aria-hidden="true" preserveAspectRatio="xMidYMid slice"
 						focusable="false">
 					<rect width="100%" height="100%" fill="#777" />
-						</img>
+					</img>
 
 
 					<div class="container">
 						<div class="carousel-caption">
 							<p>
-								<a class="btn btn-lg btn-warning" href="views/gaming_pc/gaming_pc.jsp">ゲーミングPCビルド</a>
+								<a class="btn btn-lg btn-warning"
+									href="views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<img class="bd-placeholder-img" width="100%" height="100%"
-							src="https://i.dell.com/sites/csimages/banner_imagery/all/fy22q04wk01_sb_rotation_slot1_1400x4722129291229354556.jpg?width=1600&format=jpg&quality=80" aria-hidden="true"
-							preserveAspectRatio="xMidYMid slice" focusable="false">
-						<rect width="100%" height="100%" fill="#777" /></img>
+						src="https://i.dell.com/sites/csimages/banner_imagery/all/fy22q04wk01_sb_rotation_slot1_1400x4722129291229354556.jpg?width=1600&format=jpg&quality=80"
+						aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+						focusable="false">
+					<rect width="100%" height="100%" fill="#777" />
+					</img>
 
 					<div class="container">
 						<div class="carousel-caption text-start text-dark">
@@ -90,26 +95,101 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<button class="carousel-control-prev" type="button"
-					data-bs-target="#myCarousel" data-bs-slide="prev">
+				data-bs-target="#myCarousel" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
 			<button class="carousel-control-next" type="button"
-					data-bs-target="#myCarousel" data-bs-slide="next">
+				data-bs-target="#myCarousel" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
 		<hr>
-		<div class="container-fluid">
-			<h2>ご利用いただき、ありがとうございます</h2>
+	
+
+		<div class="container px-4">
+		<h2>ご利用いただき、ありがとうございます</h2>
+			<div
+				class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+				<div class="col align-items-start">
+					<div class="card">
+						<img
+							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+							class="card-img-top px-4">
+						<div class="card-body">
+							<h5 class="card-title">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<p class="card-text text-start">
+								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+								税込・配送料込
+							</p>
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+								class="btn btn-outline-primary">比較</a>
+						</div>
+					</div>
+				</div>
+				<div class="col align-items-start">
+					<div class="card">
+						<img
+							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+							class="card-img-top px-4">
+						<div class="card-body">
+							<h5 class="card-title">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<p class="card-text text-start">
+								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+								税込・配送料込
+							</p>
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+								class="btn btn-outline-primary">比較</a>
+						</div>
+					</div>
+				</div>
+				<div class="col align-items-start">
+					<div class="card">
+						<img
+							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+							class="card-img-top px-4">
+						<div class="card-body">
+							<h5 class="card-title">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<p class="card-text text-start">
+								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+								税込・配送料込
+							</p>
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+								class="btn btn-outline-primary">比較</a>
+						</div>
+					</div>
+				</div>
+				<div class="col align-items-start">
+					<div class="card">
+						<img
+							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+							class="card-img-top px-4">
+						<div class="card-body">
+							<h5 class="card-title">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<p class="card-text text-start">
+								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+								税込・配送料込
+							</p>
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+								class="btn btn-outline-primary">比較</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		
+
+
+
 	</main>
 
 	<jsp:include page="../layouts/footer.jsp" />
-	
+
 </body>
 </html>
