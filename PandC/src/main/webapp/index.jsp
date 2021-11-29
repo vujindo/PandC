@@ -7,6 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>P&C Pick And Choose PC Shopping Site</title>
+<link href="">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -20,8 +21,9 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="css/carousel.css" rel="stylesheet">
-
+<link href="${pageContext.request.contextPath}/css/carousel.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/default.css" rel="stylesheet">
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/default.js"></script> 
 </head>
 <body class="d-flex flex-column h-100">
 
