@@ -20,7 +20,9 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="css/carousel.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/carousel.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/default.css" rel="stylesheet">
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/default.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -120,8 +122,8 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
@@ -137,8 +139,8 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
@@ -154,8 +156,8 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
@@ -171,8 +173,8 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
+							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
+								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
@@ -184,8 +186,6 @@
 				</div>
 			</div>
 		</div>
-
-
 
 	</main>
 
