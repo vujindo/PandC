@@ -25,7 +25,7 @@
 						<li><a class="dropdown-item" href="#">タブレット</a></li>
 						<li><a class="dropdown-item" href="#">モニター</a></li>
 						<li><a class="dropdown-item" href="#">周辺機器</a></li>
-						<li><a class="dropdown-item" href="#">すべての商品の表示</a></li>
+						<li><a class="dropdown-item" href="#">．．．</a></li>
 					</ul>
 				</div>
 				<div class="dropdown">

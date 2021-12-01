@@ -56,7 +56,7 @@
 			<div
 				class="col-md-6 bg-light p-4 border-top border-end border-bottom rounded-end">
 				<h2>アカウントの作成</h2>
-				<form>
+				<form action="views/auth/mail_confirm.jsp" method="">
 					<div class="form-floating">
 						<input type="text" class="form-control" id="floatingInput"
 							placeholder=""> <label for="floatingInput">性<span
@@ -94,9 +94,9 @@
 							自社のポリシーを同意する。
 						</label>
 					</div>
-					<button class="w-100 btn btn-primary my-2" type="button"">アカウントの作成</button>
+					<button class="w-100 btn btn-primary my-2" type="submit">アカウントの作成</button>
 					<button class="w-100 btn btn-outline-primary my-2"
-						type="submit">法人のアカウントの新規作成</button>
+						type="button">法人のアカウントの新規作成</button>
 					<p class="mt-5 mb-3 text-muted">&copy; 2021 CBL ,Inc. All
 						rights reserved.</p>
 				</form>
