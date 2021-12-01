@@ -98,7 +98,7 @@
 				<h5 class="card-title">DELL ALIENWARE AW3821DW
 					37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h5>
 				<p class="card-text text-start">
-					標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br> 税込・配送料込
+					標準価格 <span class="text-danger text-decoration-line-through">257,180円</span> <br> 販売価格193,480円 割引額 63,700円 <br> 税込・配送料込
 				</p>
 				<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
 					class="btn btn-outline-primary">比較</a>
@@ -111,7 +111,7 @@
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div>
-          <img src="https://cdn-icons.flaticon.com/png/128/3188/premium/3188675.png?token=exp=1637546849~hmac=312255662a4ee36d1a7678133541598b" width="65" height="55" alt=""></img>
+          <img src="https://cdn-icons.flaticon.com/png/512/3188/premium/3188744.png?token=exp=1638327126~hmac=ff9667cc987ef206f83b17b6c5866df3" width="65" height="55" alt=""></img>
         </div>
         <h2>Featured title</h2>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>

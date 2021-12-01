@@ -54,7 +54,7 @@
 							<h1>初心者に向け</h1>
 							<p>
 								<a class="btn btn-lg btn-primary"
-									href="views/starter_guide/question1.jsp">今、すぐ調査に</a>
+									href="${pageContext.request.contextPath}/views/starter_guide/question1.jsp">今、すぐ調査に</a>
 							</p>
 						</div>
 					</div>
@@ -72,7 +72,7 @@
 						<div class="carousel-caption">
 							<p>
 								<a class="btn btn-lg btn-warning"
-									href="views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
+									href="${pageContext.request.contextPath}/views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
 							</p>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 							<p>Some representative placeholder content for the third
 								slide of this carousel.</p>
 							<p>
-								<a class="btn btn-lg btn-primary" href="login.jsp">法人はこちら</a>
+								<a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/login.jsp">法人はこちら</a>
 							</p>
 						</div>
 					</div>
@@ -128,7 +128,7 @@
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
 							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
 								class="btn btn-outline-primary">比較</a>
 						</div>
 					</div>
