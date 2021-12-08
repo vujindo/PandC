@@ -20,9 +20,12 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css" rel="stylesheet">
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/default.js"></script>
+<link href="${pageContext.request.contextPath}/css/carousel.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/default.css"
+	rel="stylesheet">
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/default.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -91,7 +94,8 @@
 							<p>Some representative placeholder content for the third
 								slide of this carousel.</p>
 							<p>
-								<a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/login.jsp">法人はこちら</a>
+								<a class="btn btn-lg btn-primary"
+									href="${pageContext.request.contextPath}/login.jsp">法人はこちら</a>
 							</p>
 						</div>
 					</div>
@@ -109,11 +113,123 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		<hr>
-	
 
-		<div class="container px-4">
-		<h2>ご利用いただき、ありがとうございます</h2>
+		<div class="container">
+			<div class="row">
+				<div class="card-group">
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://to-y.net/w/wp-content/uploads/og.png"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Mac</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/273/200000015000124176/SD_200000015000124176510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Asus</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/1378/200000015000125184/SD_200000015000125184510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Lenovo</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/5382/200000017500040103/SD_200000017500040103510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">MSI</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/5382/200000017500040102/SD_200000017500040102510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Huawei</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/221/200000015000124670/SD_200000015000124670510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">富士通</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="card-group">
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/221/200000015000124674/SD_200000015000124674510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Dell</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/1638/200000015000125738/SD_200000015000125738510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">HP</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/9295/200000015000126900/SD_200000015000126900510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Microsoft</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/5382/200000017500040101/SD_200000017500040101510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Mouse</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/7865/200000017500042647/SD_200000017500042647510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Razer</p>
+						</div>
+					</div>
+
+					<div class="btn card overflow-hidden text-center">
+						<a href="#"><img
+							src="https://image.yodobashi.com/promotion/a/221/200000015000124671/SD_200000015000124671510B1.jpg"
+							class="card-img-top px-3 pt-4" alt="..."></a>
+						<div class="">
+							<p class="card-text fw-bold">Panasonic</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="mt-2">ご利用いただき、ありがとうございます</h2>
 			<div
 				class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 				<div class="col align-items-start">
@@ -122,13 +238,16 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
+							<h5 class="card-title">
+								<a class="title" href="#">DELL ALIENWARE AW3821DW
+									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+							</h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
 							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a
+								href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
 								class="btn btn-outline-primary">比較</a>
 						</div>
 					</div>
@@ -139,25 +258,10 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
-							<p class="card-text text-start">
-								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
-								税込・配送料込
-							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
-								class="btn btn-outline-primary">比較</a>
-						</div>
-					</div>
-				</div>
-				<div class="col align-items-start">
-					<div class="card">
-						<img
-							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
-							class="card-img-top px-4">
-						<div class="card-body">
-							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
+							<h5 class="card-title">
+								<a class="title" href="#">DELL ALIENWARE AW3821DW
+									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+							</h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
@@ -173,8 +277,29 @@
 							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 							class="card-img-top px-4">
 						<div class="card-body">
-							<h5 class="card-title"><a class="title" href="#">DELL ALIENWARE AW3821DW
-								37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a></h5>
+							<h5 class="card-title">
+								<a class="title" href="#">DELL ALIENWARE AW3821DW
+									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+							</h5>
+							<p class="card-text text-start">
+								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+								税込・配送料込
+							</p>
+							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+								class="btn btn-outline-primary">比較</a>
+						</div>
+					</div>
+				</div>
+				<div class="col align-items-start">
+					<div class="card">
+						<img
+							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+							class="card-img-top px-4">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a class="title" href="#">DELL ALIENWARE AW3821DW
+									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+							</h5>
 							<p class="card-text text-start">
 								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 								税込・配送料込
