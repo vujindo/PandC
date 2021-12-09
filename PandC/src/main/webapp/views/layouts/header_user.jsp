@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<header class="py-3 mb-3border-bottom ">
+<header class="py-3 mb-3border-bottom bg-white">
 	<div class="container-fluid d-grid gap-3 align-items-center">
 		<div
 			class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -13,18 +13,21 @@
 
 			<ul
 				class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li><a href="${pageContext.request.contextPath}/views/auth/home.jsp"
+				<li><a
+					href="${pageContext.request.contextPath}/views/auth/home.jsp"
 					class="nav-link px-2 link-secondary">ホーム</a></li>
 				<div class="dropdown">
-					<button class="btn" type="button" id="dropdownMenuButton1"
-						data-bs-toggle="dropdown" aria-expanded="false">製品</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<button class="btn" type="button" id="dropdownMenuClickableInside"
+						data-bs-toggle="dropdown" data-bs-auto-close="outside"
+						aria-expanded="false">製品</button>
+					<ul class="dropdown-menu"
+						aria-labelledby="dropdownMenuClickableInside">
 						<li><a class="dropdown-item" href="#">ノートパソコン</a></li>
 						<li><a class="dropdown-item" href="#">デスクトップ</a></li>
 						<li><a class="dropdown-item" href="#">ゲーミング</a></li>
 						<li><a class="dropdown-item" href="#">タブレット</a></li>
 						<li><a class="dropdown-item" href="#">モニター</a></li>
-						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+						<li><a class="dropdown-item" href="${pageContext.request.contextPath}/views/category/accessories.jsp">周辺機器</a></li>
 						<li><a class="dropdown-item" href="#">．．．</a></li>
 					</ul>
 				</div>
@@ -72,7 +75,8 @@
 					<li><a class="dropdown-item" href="../auth/profile.jsp">マイアカウント</a></li>
 					<li><a class="dropdown-item" href="../auth/user_setting.jsp">．．．</a></li>
 					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="${pageContext.request.contextPath}/index.jsp">Sign out</a></li>
+					<li><a class="dropdown-item"
+						href="${pageContext.request.contextPath}/index.jsp">Sign out</a></li>
 				</ul>
 			</div>
 

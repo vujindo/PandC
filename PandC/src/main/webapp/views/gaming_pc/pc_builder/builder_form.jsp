@@ -41,68 +41,68 @@
 					<tr>
 						<th>Component</th>
 						<th>プロダクト</th>
-						<th>価値</th>
+						<th>価格</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>プロセッサー</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>マザーボード</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>CPUクーラー</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>ケース</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>グラフィックカード</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>RAM</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>ストレージ</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>ケースクーラー</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>電源ユニット</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td>This cell is aligned to the top.</td>
 						<td></td>
 					</tr>
 					<tr class="">
 						<td>モニター</td>
-						<td><button type="button" class="btn btn-primary">&#43;商品追加</button></td>
+						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
 						<td></td>
 						<td></td>
 					</tr>
