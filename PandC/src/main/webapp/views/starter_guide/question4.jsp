@@ -40,7 +40,7 @@
 
 		<div class="container">
 			<form action="question5.jsp" method="POST">
-				<p>価値？（複数選択）</p>
+				<p>価格？（複数選択）</p>
 
 				<div class="form-check">
 					<input class="form-check-input" type="checkbox" value=""

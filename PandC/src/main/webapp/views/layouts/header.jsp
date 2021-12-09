@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<header class="py-3 mb-3border-bottom ">	
+<header class="py-3 mb-3border-bottom bg-white">	
 	<div class="container-fluid d-grid gap-3 align-items-center">
 		<div
 			class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -23,7 +23,7 @@
 						<li><a class="dropdown-item" href="#">ゲーミング</a></li>
 						<li><a class="dropdown-item" href="#">タブレット</a></li>
 						<li><a class="dropdown-item" href="#">モニター</a></li>
-						<li><a class="dropdown-item" href="#">周辺機器</a></li>
+						<li><a class="dropdown-item" href="${pageContext.request.contextPath}/views/category/accessories.jsp">周辺機器</a></li>
 						<li><a class="dropdown-item" href="#">．．．</a></li>
 					</ul>
 				</div>

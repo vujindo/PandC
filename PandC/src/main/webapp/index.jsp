@@ -21,11 +21,14 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css" rel="stylesheet">
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/default.js"></script> 
+<link href="${pageContext.request.contextPath}/css/carousel.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/default.css"
+	rel="stylesheet">
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/default.js"></script>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 bg-light">
 
 	<jsp:include page="views/layouts/header.jsp" />
 
@@ -54,7 +57,7 @@
 							<h1>初心者に向け</h1>
 							<p>
 								<a class="btn btn-lg btn-primary"
-									href="views/starter_guide/question1.jsp">今、すぐ調査に</a>
+									href="${pageContext.request.contextPath}/views/starter_guide/question1.jsp">今、すぐ調査に</a>
 							</p>
 						</div>
 					</div>
@@ -72,7 +75,7 @@
 						<div class="carousel-caption">
 							<p>
 								<a class="btn btn-lg btn-warning"
-									href="views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
+									href="${pageContext.request.contextPath}/views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
 							</p>
 						</div>
 					</div>
@@ -91,7 +94,8 @@
 							<p>Some representative placeholder content for the third
 								slide of this carousel.</p>
 							<p>
-								<a class="btn btn-lg btn-primary" href="login.jsp">法人はこちら</a>
+								<a class="btn btn-lg btn-primary"
+									href="${pageContext.request.contextPath}/login.jsp">法人はこちら</a>
 							</p>
 						</div>
 					</div>
@@ -110,7 +114,7 @@
 			</button>
 		</div>
 
-		<div class="container">
+		<div class="container mb-2">
 			<div class="row">
 				<div class="card-group">
 					<div class="btn card overflow-hidden text-center">
@@ -168,6 +172,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="card-group">
 					<div class="btn card overflow-hidden text-center">
@@ -225,90 +230,92 @@
 					</div>
 				</div>
 			</div>
-			<h2 class="mt-2">ご利用いただき、ありがとうございます</h2>
-			<div
-				class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-				<div class="col align-items-start">
-					<div class="card">
-						<img
-							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
-							class="card-img-top px-4">
-						<div class="card-body">
-							<h5 class="card-title">
-								<a class="title" href="#">DELL ALIENWARE AW3821DW
-									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
-							</h5>
-							<p class="card-text text-start">
-								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
-								税込・配送料込
-							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a
-								href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
-								class="btn btn-outline-primary">比較</a>
+		</div>
+		<div class="bg-white mt-4">
+			<div class="container">
+				<h2 class="pt-5">ご利用いただき、ありがとうございます</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+					<div class="col align-items-start">
+						<div class="card">
+							<img
+								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+								class="card-img-top px-4">
+							<div class="card-body">
+								<h5 class="card-title">
+									<a class="title" href="#">DELL ALIENWARE AW3821DW
+										37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+								</h5>
+								<p class="card-text text-start">
+									標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+									税込・配送料込
+								</p>
+								<a href="#" class="btn btn-primary">カートに入れる</a> <a
+									href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
+									class="btn btn-outline-primary">比較</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col align-items-start">
-					<div class="card">
-						<img
-							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
-							class="card-img-top px-4">
-						<div class="card-body">
-							<h5 class="card-title">
-								<a class="title" href="#">DELL ALIENWARE AW3821DW
-									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
-							</h5>
-							<p class="card-text text-start">
-								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
-								税込・配送料込
-							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
-								class="btn btn-outline-primary">比較</a>
+					<div class="col align-items-start">
+						<div class="card">
+							<img
+								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+								class="card-img-top px-4">
+							<div class="card-body">
+								<h5 class="card-title">
+									<a class="title" href="#">DELL ALIENWARE AW3821DW
+										37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+								</h5>
+								<p class="card-text text-start">
+									標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+									税込・配送料込
+								</p>
+								<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+									class="btn btn-outline-primary">比較</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col align-items-start">
-					<div class="card">
-						<img
-							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
-							class="card-img-top px-4">
-						<div class="card-body">
-							<h5 class="card-title">
-								<a class="title" href="#">DELL ALIENWARE AW3821DW
-									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
-							</h5>
-							<p class="card-text text-start">
-								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
-								税込・配送料込
-							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
-								class="btn btn-outline-primary">比較</a>
+					<div class="col align-items-start">
+						<div class="card">
+							<img
+								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+								class="card-img-top px-4">
+							<div class="card-body">
+								<h5 class="card-title">
+									<a class="title" href="#">DELL ALIENWARE AW3821DW
+										37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+								</h5>
+								<p class="card-text text-start">
+									標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+									税込・配送料込
+								</p>
+								<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+									class="btn btn-outline-primary">比較</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col align-items-start">
-					<div class="card">
-						<img
-							src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
-							class="card-img-top px-4">
-						<div class="card-body">
-							<h5 class="card-title">
-								<a class="title" href="#">DELL ALIENWARE AW3821DW
-									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
-							</h5>
-							<p class="card-text text-start">
-								標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
-								税込・配送料込
-							</p>
-							<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
-								class="btn btn-outline-primary">比較</a>
+					<div class="col align-items-start">
+						<div class="card">
+							<img
+								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
+								class="card-img-top px-4">
+							<div class="card-body">
+								<h5 class="card-title">
+									<a class="title" href="#">DELL ALIENWARE AW3821DW
+										37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
+								</h5>
+								<p class="card-text text-start">
+									標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
+									税込・配送料込
+								</p>
+								<a href="#" class="btn btn-primary">カートに入れる</a> <a href="#"
+									class="btn btn-outline-primary">比較</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 
 	</main>
 
