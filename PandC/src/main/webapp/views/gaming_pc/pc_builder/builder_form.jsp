@@ -29,8 +29,9 @@
 	<jsp:include page="../../layouts/header.jsp" />
 
 	<main class="flex-shrink-0">
-		<div class="p-md-3 mb-4 text-white text-center bg-secondary bg-gradient">
-			<div >
+		<div
+			class="p-md-3 mb-4 text-white text-center bg-secondary bg-gradient">
+			<div>
 				<h1 class="fst-italic">PCビルド</h1>
 				<span>ホーム＞ゲーミングPC＞PCビルド</span>
 			</div>
@@ -48,7 +49,38 @@
 				<tbody>
 					<tr>
 						<td>プロセッサー</td>
-						<td><a href="#" type="button" class="btn btn-primary">&#43;商品追加</a></td>
+						<td>
+							<button type="button" class="btn btn-primary"
+								data-bs-toggle="modal" data-bs-target="#exampleModal">&#43;商品追加</button>
+							<div class="modal fade" id="exampleModal"
+								data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div
+									class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+									<div class="modal-content bg-dark">
+										<div class="modal-header text-white">
+											<h5 class="modal-title" id="exampleModalLabel">プロセッサー</h5>
+											<button type="button" class="btn-close btn-close-white"
+												data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body bg-white">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">An item</li>
+												<li class="list-group-item">A second item</li>
+												<li class="list-group-item">A third item</li>
+												<li class="list-group-item">A fourth item</li>
+												<li class="list-group-item">And a fifth one</li>
+											</ul>
+										</div>
+										<div class="modal-footer bg-white">
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">追加</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
 						<td></td>
 						<td></td>
 					</tr>
