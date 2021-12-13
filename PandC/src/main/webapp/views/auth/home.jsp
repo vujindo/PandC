@@ -237,7 +237,7 @@
 				<div
 					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 					<div class="col align-items-start">
-						<div class="card">
+						<div class="card shadow">
 							<img
 								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 								class="card-img-top px-4">
@@ -257,7 +257,7 @@
 						</div>
 					</div>
 					<div class="col align-items-start">
-						<div class="card">
+						<div class=" shadow">
 							<img
 								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 								class="card-img-top px-4">
@@ -276,7 +276,7 @@
 						</div>
 					</div>
 					<div class="col align-items-start">
-						<div class="card">
+						<div class="card shadow">
 							<img
 								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 								class="card-img-top px-4">
@@ -295,7 +295,7 @@
 						</div>
 					</div>
 					<div class="col align-items-start">
-						<div class="card">
+						<div class="card shadow">
 							<img
 								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 								class="card-img-top px-4">

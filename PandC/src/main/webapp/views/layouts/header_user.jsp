@@ -27,7 +27,7 @@
 						<li><a class="dropdown-item" href="#">ゲーミング</a></li>
 						<li><a class="dropdown-item" href="#">タブレット</a></li>
 						<li><a class="dropdown-item" href="#">モニター</a></li>
-						<li><a class="dropdown-item" href="${pageContext.request.contextPath}/views/category/accessories.jsp">周辺機器</a></li>
+						<li><a class="dropdown-item" href="${pageContext.request.contextPath}/views/category/accessories/accessories.jsp">周辺機器</a></li>
 						<li><a class="dropdown-item" href="#">．．．</a></li>
 					</ul>
 				</div>
