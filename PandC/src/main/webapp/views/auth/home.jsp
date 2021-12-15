@@ -63,8 +63,8 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="bd-placeholder-img" width="100%" height="100%"
-						src="https://storage-asset.msi.com/jp/picture/banner/banner_1635322571a05adfe1976d0440fdfdf4170df438a8.png"
+					<img class="bd-placeholder-img" width="100%" height="100%" 
+						src="https://www.asus.com/microsite/motherboard/Intel-Alder-Lake-Z690-H670-B660/jp/websites/img/z690/banner_z690_1920x680.jpg"
 						aria-hidden="true" preserveAspectRatio="xMidYMid slice"
 						focusable="false">
 					<rect width="100%" height="100%" fill="#777" />
