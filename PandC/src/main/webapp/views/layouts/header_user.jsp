@@ -59,7 +59,7 @@
 
 			<div class="text-end btn-group" role="group"
 				aria-label="Basic example">
-				<button type="button" class="btn text-dark">カート</button>
+				<a href="../cart/cart.jsp" type="button" class="btn text-dark">カート</a>
 				<!--				<button type="button" class="btn text-dark"><a href="${pageContext.request.contextPath}/login.jsp" class="nav-link link-dark">ログイン</a></button>-->
 				<button type="button" class="btn text-dark">JP/JA</button>
 			</div>

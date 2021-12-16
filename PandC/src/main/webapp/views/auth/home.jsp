@@ -243,14 +243,14 @@
 								class="card-img-top px-4">
 							<div class="card-body">
 								<h5 class="card-title">
-									<a class="title" href="#">DELL ALIENWARE AW3821DW
+									<a class="title" href="../product/product_details.jsp">DELL ALIENWARE AW3821DW
 										37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</a>
 								</h5>
 								<p class="card-text text-start">
 									標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 									税込・配送料込
 								</p>
-								<a href="#" class="btn btn-primary">カートに入れる</a> <a
+								<a href="../cart/cart_product.jsp" class="btn btn-primary">カートに入れる</a> <a
 									href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
 									class="btn btn-outline-primary">比較</a>
 							</div>
