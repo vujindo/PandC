@@ -41,21 +41,110 @@
 						alt="">
 				</div>
 				<div class="col">
-					
-						<a href="#">DELL</a>
-						<h2>DELL ALIENWARE AW3821DW
-							37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h2>
-						<p>37.5インチ高速IPS曲面ゲーミング モニターはNVIDIA® G-SYNC®
-							ULTIMATE認定取得済み。VESA DisplayHDR™ 600とIPSナノ
-							カラーの機能を備え、臨場感あふれるゲーム体験をお楽しみいただけます。</p>
 
-						<div>
-							標準価格 <span class="text-decoration-line-through">257,180円</span><br>
-							<span class="fs-3 fw-bold">193,480円</span> 割引額 <span
-								class="text-danger fw-bold">63,700円</span> <br> 税込・配送料込
-						</div>
-						<div class="py-3"><button type="button" class="btn btn-success px-5">カートに入れる</button></div>
+					<a href="#">DELL</a>
+					<h2>DELL ALIENWARE AW3821DW
+						37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</h2>
+					<p>37.5インチ高速IPS曲面ゲーミング モニターはNVIDIA® G-SYNC® ULTIMATE認定取得済み。VESA
+						DisplayHDR™ 600とIPSナノ カラーの機能を備え、臨場感あふれるゲーム体験をお楽しみいただけます。</p>
+
+					<div>
+						標準価格 <span class="text-decoration-line-through">257,180円</span><br>
+						<span class="fs-3 fw-bold">193,480円</span> 割引額 <span
+							class="text-danger fw-bold">63,700円</span> <br> 税込・配送料込
+					</div>
+					<div class="py-3">
+						<button type="button" class="btn btn-success px-5">カートに入れる</button>
+					</div>
 				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav id="navbar-example" class="navbar px-3 justify-content-center">
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a class="nav-link"
+						href="#scrollspyHeading1">概要</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="#scrollspyHeading2">仕様詳細</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="#scrollspyHeading3">レビュー</a></li>
+				</ul>
+			</nav>
+			<div data-bs-spy="scroll" data-bs-target="#navbar-example"
+				data-bs-offset="0" class="scrollspy-example"
+				style="overflow-y: scroll; height: 500px" tabindex="0">
+				<h4 id="scrollspyHeading1">素晴らしい画質、より多くの勝利。</h4>
+				<p>
+					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
+					ディミング機能を備えたVESA DisplayHDR™
+					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
+				</p>
+				<p>
+					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
+					ディミング機能を備えたVESA DisplayHDR™
+					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
+				</p>
+				<p>
+					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
+					ディミング機能を備えたVESA DisplayHDR™
+					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
+				</p>
+				<p>
+					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
+					ディミング機能を備えたVESA DisplayHDR™
+					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
+				</p>
+				<h4 id="scrollspyHeading2">仕様詳細</h4>
+				<div class="row">
+					<div class="col">
+						<p>
+							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+						</p>
+					</div>
+					<div class="col">
+						<p>
+							カーブスクリーン<br> 対応
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p>
+							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+						</p>
+					</div>
+					<div class="col">
+						<p>
+							カーブスクリーン<br> 対応
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p>
+							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+						</p>
+					</div>
+					<div class="col">
+						<p>
+							カーブスクリーン<br> 対応
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p>
+							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+						</p>
+					</div>
+					<div class="col">
+						<p>
+							カーブスクリーン<br> 対応
+						</p>
+					</div>
+				</div>
+				<h4 id="scrollspyHeading3">Second heading</h4>
+				<p>...</p>
 			</div>
 		</div>
 	</main>
