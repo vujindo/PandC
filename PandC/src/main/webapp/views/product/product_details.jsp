@@ -28,14 +28,16 @@
 	src="${pageContext.request.contextPath}/js/default.js"></script>
 
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 scrollspy-example"
+	data-bs-spy="scroll" data-bs-target="#navbar-example2"
+	data-bs-offset="20" style="position: relative;" tabindex="0">
 
 	<jsp:include page="../layouts/header_user.jsp" />
 
 	<main class="flex-shrink-0">
 		<div class="container py-5">
 			<div class="row">
-				<div class="col">
+				<div class="col justify-content-center">
 					<img
 						src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/peripherals/output_devices/dell/monitors/aw3821dw/general/aw3821dw_cfp_00030lf095_wh23_key_art.png?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=402&qlt=100,0&resMode=sharp2&size=402,402"
 						alt="">
@@ -59,93 +61,173 @@
 				</div>
 			</div>
 		</div>
+		<div id="navbar-example2"
+			class="navbar justify-content-center sticky-top bg-white">
+			<ul class="nav nav-tabs fs-5">
+				<li class="nav-item"><a class="nav-link fw-bold"
+					href="#scrollspyHeading1">基本概要</a></li>
+				<li class="nav-item"><a class="nav-link fw-bold"
+					href="#scrollspyHeading2">仕様詳細</a></li>
+				<li class="nav-item"><a class="nav-link fw-bold"
+					href="#scrollspyHeading3">カスタマーレビュー</a></li>
+			</ul>
+		</div>
 		<div class="container">
-			<nav id="navbar-example" class="navbar px-3 justify-content-center">
-				<ul class="nav nav-tabs">
-					<li class="nav-item"><a class="nav-link"
-						href="#scrollspyHeading1">概要</a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="#scrollspyHeading2">仕様詳細</a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="#scrollspyHeading3">レビュー</a></li>
-				</ul>
-			</nav>
-			<div data-bs-spy="scroll" data-bs-target="#navbar-example"
-				data-bs-offset="0" class="scrollspy-example"
-				style="overflow-y: scroll; height: 500px" tabindex="0">
-				<h4 id="scrollspyHeading1">素晴らしい画質、より多くの勝利。</h4>
-				<p>
-					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
-					ディミング機能を備えたVESA DisplayHDR™
-					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
-				</p>
-				<p>
-					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
-					ディミング機能を備えたVESA DisplayHDR™
-					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
-				</p>
-				<p>
-					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
-					ディミング機能を備えたVESA DisplayHDR™
-					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
-				</p>
-				<p>
-					<span class="fw-bold">限りなくリアル：</span>極めて写実的な画像を提供するだけでなく、ローカル
-					ディミング機能を備えたVESA DisplayHDR™
-					600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。
-				</p>
-				<h4 id="scrollspyHeading2">仕様詳細</h4>
-				<div class="row">
-					<div class="col">
-						<p>
-							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
-						</p>
-					</div>
-					<div class="col">
-						<p>
-							カーブスクリーン<br> 対応
-						</p>
-					</div>
+			<section id="scrollspyHeading1" class="mb-5 pb-5">
+				<div class="text-center">
+					<img
+						src="https://i.dell.com/sites/csimages/Product_Imagery/all/monitors_alienware_aw3821dw_pdp_mod02_new.gif"
+						alt="">
 				</div>
-				<div class="row">
-					<div class="col">
-						<p>
-							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
-						</p>
-					</div>
-					<div class="col">
-						<p>
-							カーブスクリーン<br> 対応
-						</p>
-					</div>
+				<div>
+					<h3>素晴らしい画質、より多くの勝利。</h3>
+					<p>限りなくリアル：極めて写実的な画像を提供するだけでなく、ローカル ディミング機能を備えたVESA DisplayHDR™
+						600では、より大きな色深度、卓越した鮮明さ、および低減されたハロー効果により、コントラスト比が向上します。</p>
+					<p>すべての色をカバー：IPSナノ カラー
+						テクノロジーはsRGBよりも広い色域を提供するシネマ標準であり、豊かで生き生きとした色彩を実現します。さらに、広視野角で95%
+						DCI-P3をサポートしています。</p>
+					<p>もう一歩ゲームの中へ：アスペクト比21:9、曲率2300Rの曲面スクリーンは、歪み、光沢、および反射を抑えながら、視界を広げて臨場感あふれるゲーム体験を提供します。また、周辺機器類のビジョンを使用することで、真に迫る臨場感がゲーム体験に生まれます。
+					</p>
+					<p>細部まで見逃さない：37.5インチの曲面WQHD+ディスプレイではWQHD（3440 x
+						1440）よりも画面ピクセルを24%多く表示できるため、より広い視界を提供して映像を細部まで鮮やかに再現します。</p>
+					<hr>
+					<h3>超高速。ブレのない動き。</h3>
+					<p>驚くほどクリアー：NVIDIA® G-SYNC®
+						ULTIMATE認定を取得したモニターはスムーズなゲーミングを実現し、HDRゲームではHDRレンダリングによる鮮やかな映像を表示します*。</p>
+					<p>よりスムーズな操作性：144Hzの高いリフレッシュ
+						レートをフルに活用することでレイテンシーが最小限に抑えられ、スムーズなゲームプレイを楽しめます。さらに、正確な1ミリ秒（GTG）のレスポンス
+						タイムによってピクセル自体の色がほぼ瞬時に変化するため、動きのブレがなくなります。</p>
 				</div>
-				<div class="row">
-					<div class="col">
-						<p>
-							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
-						</p>
-					</div>
-					<div class="col">
-						<p>
-							カーブスクリーン<br> 対応
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<p>
-							機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
-						</p>
-					</div>
-					<div class="col">
-						<p>
-							カーブスクリーン<br> 対応
-						</p>
-					</div>
-				</div>
-				<h4 id="scrollspyHeading3">Second heading</h4>
-				<p>...</p>
-			</div>
+			</section>
+			<section id="scrollspyHeading2" class="mb-5 pb-5">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col"><h3>仕様詳細</h3></th>
+							<th scope="col"></th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"</td>
+							<td>カーブスクリーン<br> 対応</td>
+						</tr>
+						<tr>
+							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate</td>
+							<td>特徴<br> AlienFX照明システム</td>
+						</tr>
+						<tr>
+							<td>パネルタイプ<br> Nano IPS</td>
+							<td>アスペクト比<br> 21:9</td>
+						</tr>
+						<tr>
+							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"</td>
+							<td>カーブスクリーン<br> 対応</td>
+						</tr>
+						<tr>
+							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate</td>
+							<td>特徴<br> AlienFX照明システム</td>
+						</tr>
+						<tr>
+							<td>パネルタイプ<br> Nano IPS</td>
+							<td>アスペクト比<br> 21:9</td>
+						</tr>
+						<tr>
+							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"</td>
+							<td>カーブスクリーン<br> 対応</td>
+						</tr>
+						<tr>
+							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate</td>
+							<td>特徴<br> AlienFX照明システム</td>
+						</tr>
+						<tr>
+							<td>パネルタイプ<br> Nano IPS</td>
+							<td>アスペクト比<br> 21:9</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="scrollspyHeading3" class="mb-5 pb-5">
+				<h3>レビュー</h3>
+				<p>This is some placeholder content for the scrollspy page. Note
+					that as you scroll down the page, the appropriate navigation link
+					is highlighted. It's repeated throughout the component example. We
+					keep adding some more example copy here to emphasize the scrolling
+					and highlighting.This is some placeholder content for the scrollspy
+					page. Note that as you scroll down the page, the appropriate
+					navigation link is highlighted. It's repeated throughout the
+					component example. We keep adding some more example copy here to
+					emphasize the scrolling and highlighting.This is some placeholder
+					content for the scrollspy page. Note that as you scroll down the
+					page, the appropriate navigation link is highlighted. It's repeated
+					throughout the component example. We keep adding some more example
+					copy here to emphasize the scrolling and highlighting.This is some
+					placeholder content for the scrollspy page. Note that as you scroll
+					down the page, the appropriate navigation link is highlighted. It's
+					repeated throughout the component example. We keep adding some more
+					example copy here to emphasize the scrolling and highlighting.This
+					is some placeholder content for the scrollspy page. Note that as
+					you scroll down the page, the appropriate navigation link is
+					highlighted. It's repeated throughout the component example. We
+					keep adding some more example copy here to emphasize the scrolling
+					and highlighting.This is some placeholder content for the scrollspy
+					page. Note that as you scroll down the page, the appropriate
+					navigation link is highlighted. It's repeated throughout the
+					component example. We keep adding some more example copy here to
+					emphasize the scrolling and highlighting.This is some placeholder
+					content for the scrollspy page. Note that as you scroll down the
+					page, the appropriate navigation link is highlighted. It's repeated
+					throughout the component example. We keep adding some more example
+					copy here to emphasize the scrolling and highlighting.This is some
+					placeholder content for the scrollspy page. Note that as you scroll
+					down the page, the appropriate navigation link is highlighted. It's
+					repeated throughout the component example. We keep adding some more
+					example copy here to emphasize the scrolling and highlighting.This
+					is some placeholder content for the scrollspy page. Note that as
+					you scroll down the page, the appropriate navigation link is
+					highlighted. It's repeated throughout the component example. We
+					keep adding some more example copy here to emphasize the scrolling
+					and highlighting.This is some placeholder content for the scrollspy
+					page. Note that as you scroll down the page, the appropriate
+					navigation link is highlighted. It's repeated throughout the
+					component example. We keep adding some more example copy here to
+					emphasize the scrolling and highlighting.This is some placeholder
+					content for the scrollspy page. Note that as you scroll down the
+					page, the appropriate navigation link is highlighted. It's repeated
+					throughout the component example. We keep adding some more example
+					copy here to emphasize the scrolling and highlighting.This is some
+					placeholder content for the scrollspy page. Note that as you scroll
+					down the page, the appropriate navigation link is highlighted. It's
+					repeated throughout the component example. We keep adding some more
+					example copy here to emphasize the scrolling and highlighting.This
+					is some placeholder content for the scrollspy page. Note that as
+					you scroll down the page, the appropriate navigation link is
+					highlighted. It's repeated throughout the component example. We
+					keep adding some more example copy here to emphasize the scrolling
+					and highlighting.This is some placeholder content for the scrollspy
+					page. Note that as you scroll down the page, the appropriate
+					navigation link is highlighted. It's repeated throughout the
+					component example. We keep adding some more example copy here to
+					emphasize the scrolling and highlighting.This is some placeholder
+					content for the scrollspy page. Note that as you scroll down the
+					page, the appropriate navigation link is highlighted. It's repeated
+					throughout the component example. We keep adding some more example
+					copy here to emphasize the scrolling and highlighting.This is some
+					placeholder content for the scrollspy page. Note that as you scroll
+					down the page, the appropriate navigation link is highlighted. It's
+					repeated throughout the component example. We keep adding some more
+					example copy here to emphasize the scrolling and highlighting.This
+					is some placeholder content for the scrollspy page. Note that as
+					you scroll down the page, the appropriate navigation link is
+					highlighted. It's repeated throughout the component example. We
+					keep adding some more example copy here to emphasize the scrolling
+					and highlighting.This is some placeholder content for the scrollspy
+					page. Note that as you scroll down the page, the appropriate
+					navigation link is highlighted. It's repeated throughout the
+					component example. We keep adding some more example copy here to
+					emphasize the scrolling and highlighting.</p>
+			</section>
 		</div>
 	</main>
 
