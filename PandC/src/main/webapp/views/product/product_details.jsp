@@ -56,7 +56,10 @@
 							class="text-danger fw-bold">63,700円</span> <br> 税込・配送料込
 					</div>
 					<div class="py-3">
-						<button type="button" class="btn btn-success px-5">カートに入れる</button>
+						<a type="button" href="../cart/cart2.jsp" class="btn btn-success px-5">カートに入れる</a>
+						<a
+							href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
+							class="btn btn-primary px-3">製品を比較</a>
 					</div>
 				</div>
 			</div>
@@ -68,8 +71,8 @@
 					href="#scrollspyHeading1">基本概要</a></li>
 				<li class="nav-item"><a class="nav-link fw-bold"
 					href="#scrollspyHeading2">仕様詳細</a></li>
-				<li class="nav-item"><a class="nav-link fw-bold"
-					href="#scrollspyHeading3">カスタマーレビュー</a></li>
+				<!-- <li class="nav-item"><a class="nav-link fw-bold"
+					href="#scrollspyHeading3">カスタマーレビュー</a></li> -->
 			</ul>
 		</div>
 		<div class="container">
@@ -110,124 +113,65 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"</td>
-							<td>カーブスクリーン<br> 対応</td>
+							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+							</td>
+							<td>カーブスクリーン<br> 対応
+							</td>
 						</tr>
 						<tr>
-							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate</td>
-							<td>特徴<br> AlienFX照明システム</td>
+							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate
+							</td>
+							<td>特徴<br> AlienFX照明システム
+							</td>
 						</tr>
 						<tr>
-							<td>パネルタイプ<br> Nano IPS</td>
-							<td>アスペクト比<br> 21:9</td>
+							<td>パネルタイプ<br> Nano IPS
+							</td>
+							<td>アスペクト比<br> 21:9
+							</td>
 						</tr>
 						<tr>
-							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"</td>
-							<td>カーブスクリーン<br> 対応</td>
+							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+							</td>
+							<td>カーブスクリーン<br> 対応
+							</td>
 						</tr>
 						<tr>
-							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate</td>
-							<td>特徴<br> AlienFX照明システム</td>
+							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate
+							</td>
+							<td>特徴<br> AlienFX照明システム
+							</td>
 						</tr>
 						<tr>
-							<td>パネルタイプ<br> Nano IPS</td>
-							<td>アスペクト比<br> 21:9</td>
+							<td>パネルタイプ<br> Nano IPS
+							</td>
+							<td>アスペクト比<br> 21:9
+							</td>
 						</tr>
 						<tr>
-							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"</td>
-							<td>カーブスクリーン<br> 対応</td>
+							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+							</td>
+							<td>カーブスクリーン<br> 対応
+							</td>
 						</tr>
 						<tr>
-							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate</td>
-							<td>特徴<br> AlienFX照明システム</td>
+							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate
+							</td>
+							<td>特徴<br> AlienFX照明システム
+							</td>
 						</tr>
 						<tr>
-							<td>パネルタイプ<br> Nano IPS</td>
-							<td>アスペクト比<br> 21:9</td>
+							<td>パネルタイプ<br> Nano IPS
+							</td>
+							<td>アスペクト比<br> 21:9
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</section>
-			<section id="scrollspyHeading3" class="mb-5 pb-5">
-				<h3>レビュー</h3>
-				<p>This is some placeholder content for the scrollspy page. Note
-					that as you scroll down the page, the appropriate navigation link
-					is highlighted. It's repeated throughout the component example. We
-					keep adding some more example copy here to emphasize the scrolling
-					and highlighting.This is some placeholder content for the scrollspy
-					page. Note that as you scroll down the page, the appropriate
-					navigation link is highlighted. It's repeated throughout the
-					component example. We keep adding some more example copy here to
-					emphasize the scrolling and highlighting.This is some placeholder
-					content for the scrollspy page. Note that as you scroll down the
-					page, the appropriate navigation link is highlighted. It's repeated
-					throughout the component example. We keep adding some more example
-					copy here to emphasize the scrolling and highlighting.This is some
-					placeholder content for the scrollspy page. Note that as you scroll
-					down the page, the appropriate navigation link is highlighted. It's
-					repeated throughout the component example. We keep adding some more
-					example copy here to emphasize the scrolling and highlighting.This
-					is some placeholder content for the scrollspy page. Note that as
-					you scroll down the page, the appropriate navigation link is
-					highlighted. It's repeated throughout the component example. We
-					keep adding some more example copy here to emphasize the scrolling
-					and highlighting.This is some placeholder content for the scrollspy
-					page. Note that as you scroll down the page, the appropriate
-					navigation link is highlighted. It's repeated throughout the
-					component example. We keep adding some more example copy here to
-					emphasize the scrolling and highlighting.This is some placeholder
-					content for the scrollspy page. Note that as you scroll down the
-					page, the appropriate navigation link is highlighted. It's repeated
-					throughout the component example. We keep adding some more example
-					copy here to emphasize the scrolling and highlighting.This is some
-					placeholder content for the scrollspy page. Note that as you scroll
-					down the page, the appropriate navigation link is highlighted. It's
-					repeated throughout the component example. We keep adding some more
-					example copy here to emphasize the scrolling and highlighting.This
-					is some placeholder content for the scrollspy page. Note that as
-					you scroll down the page, the appropriate navigation link is
-					highlighted. It's repeated throughout the component example. We
-					keep adding some more example copy here to emphasize the scrolling
-					and highlighting.This is some placeholder content for the scrollspy
-					page. Note that as you scroll down the page, the appropriate
-					navigation link is highlighted. It's repeated throughout the
-					component example. We keep adding some more example copy here to
-					emphasize the scrolling and highlighting.This is some placeholder
-					content for the scrollspy page. Note that as you scroll down the
-					page, the appropriate navigation link is highlighted. It's repeated
-					throughout the component example. We keep adding some more example
-					copy here to emphasize the scrolling and highlighting.This is some
-					placeholder content for the scrollspy page. Note that as you scroll
-					down the page, the appropriate navigation link is highlighted. It's
-					repeated throughout the component example. We keep adding some more
-					example copy here to emphasize the scrolling and highlighting.This
-					is some placeholder content for the scrollspy page. Note that as
-					you scroll down the page, the appropriate navigation link is
-					highlighted. It's repeated throughout the component example. We
-					keep adding some more example copy here to emphasize the scrolling
-					and highlighting.This is some placeholder content for the scrollspy
-					page. Note that as you scroll down the page, the appropriate
-					navigation link is highlighted. It's repeated throughout the
-					component example. We keep adding some more example copy here to
-					emphasize the scrolling and highlighting.This is some placeholder
-					content for the scrollspy page. Note that as you scroll down the
-					page, the appropriate navigation link is highlighted. It's repeated
-					throughout the component example. We keep adding some more example
-					copy here to emphasize the scrolling and highlighting.This is some
-					placeholder content for the scrollspy page. Note that as you scroll
-					down the page, the appropriate navigation link is highlighted. It's
-					repeated throughout the component example. We keep adding some more
-					example copy here to emphasize the scrolling and highlighting.This
-					is some placeholder content for the scrollspy page. Note that as
-					you scroll down the page, the appropriate navigation link is
-					highlighted. It's repeated throughout the component example. We
-					keep adding some more example copy here to emphasize the scrolling
-					and highlighting.This is some placeholder content for the scrollspy
-					page. Note that as you scroll down the page, the appropriate
-					navigation link is highlighted. It's repeated throughout the
-					component example. We keep adding some more example copy here to
-					emphasize the scrolling and highlighting.</p>
-			</section>
+			<!-- <section id="scrollspyHeading3" class="mb-5 pb-5">
+				
+			</section> -->
 		</div>
 	</main>
 
