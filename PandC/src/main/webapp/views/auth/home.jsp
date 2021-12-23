@@ -250,7 +250,7 @@
 									標準価格 257,180円 <br> 販売価格193,480円 割引額 63,700円 <br>
 									税込・配送料込
 								</p>
-								<a href="../cart/cart_product.jsp" class="btn btn-primary">カートに入れる</a> <a
+								<a href="../cart/cart2.jsp" class="btn btn-primary">カートに入れる</a> <a
 									href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
 									class="btn btn-outline-primary">比較</a>
 							</div>
