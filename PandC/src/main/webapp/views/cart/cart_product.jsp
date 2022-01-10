@@ -33,7 +33,7 @@
 	<jsp:include page="../layouts/header_user.jsp" />
 
 	<main class="flex-shrink-0">
-		<div class="container px-4 py-3">
+		<div class="container py-3">
 			<div class="text-center mb-5">
 				<h3>ショッピングカート</h3>
 			</div>
