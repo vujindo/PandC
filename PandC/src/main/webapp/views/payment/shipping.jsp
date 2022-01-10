@@ -27,7 +27,7 @@
 	<jsp:include page="../layouts/header_user.jsp" />
 
 	<main class="flex-shrink-0">
-		<div class="container px-4 py-3">
+		<div class="container py-3">
 			<div class="text-center mb-5">
 				<h3>ご注文手続き</h3>
 			</div>
@@ -37,46 +37,49 @@
 					role="progressbar" style="width: 20%;" aria-valuenow="100"
 					aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<div class="row g-5 mb-5">
-				<div class="col-md-5 col-lg-4 order-md-last">
-					<h4 class="d-flex justify-content-between align-items-center mb-3">
-						<span class="text-primary">あなたのカート</span> <span
-							class="badge bg-primary rounded-pill">1</span>
-					</h4>
-					<ul class="list-group mb-3">
-						<li class="list-group-item d-flex justify-content-between lh-sm">
-							<div>
-								<h6 class="my-0 text-danger">63,700円 割引額合計</h6>
-								<small class="text-muted">Brief description</small>
-						</li>
-						<li class="list-group-item d-flex justify-content-between lh-sm">
-							<div>
-								<h6 class="my-0">小計（税別）</h6>
-								<small class="text-muted">(1つの 商品)</small>
-							</div> <span class="text-muted">175,891円</span>
-						</li>
-						<li class="list-group-item d-flex justify-content-between lh-sm">
-							<div>
-								<h6 class="my-0">消費税</h6>
-							</div> <span class="text-muted">17,589円</span>
-						</li>
-						<li
-							class="list-group-item d-flex justify-content-between bg-light">
-							<div class="text-success">
-								<h6 class="my-0 fw-bold">合計金額</h6>
-								<small>税込・配送料込</small>
-							</div> <span class="text-success fw-bold">193,480円</span>
-						</li>
-					</ul>
-					
-					<form action="../payment.jsp" method="POST">
+			<form action="../payment.jsp" method="POST" class="needs-validation"
+				novalidate>
+				<div class="row g-5 mb-5">
+					<div class="col-md-5 col-lg-4 order-md-last">
+						<ul class="list-group my-3">
+							<li class="list-group-item d-flex justify-content-between lh-sm">
+								<div>
+									<h6 class="my-0 text-danger">63,700円 割引額合計</h6>
+									<small class="text-muted">Brief description</small>
+								</div>
+							</li>
+							<li class="list-group-item d-flex justify-content-between lh-sm">
+								<div>
+									<h6 class="my-0">小計（税別）</h6>
+									<small class="text-muted">(1つの 商品)</small>
+								</div> <span class="text-muted">175,891円</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between lh-sm">
+								<div>
+									<h6 class="my-0">消費税</h6>
+								</div> <span class="text-muted">17,589円</span>
+							</li>
+							<li
+								class="list-group-item d-flex justify-content-between bg-light">
+								<div class="text-success">
+									<h6 class="my-0 fw-bold">合計金額</h6>
+									<small>税込・配送料込</small>
+								</div> <span class="text-success fw-bold">193,480円</span>
+							</li>
+						</ul>
+
+
 						<div class="mb-3">
 							<button class="w-100 btn btn-primary btn-lg" type="submit">お支払情報へ進む</button>
 						</div>
-					</form>
-				</div>
-				<div class="col-md-7 col-lg-8">
-					<form class="needs-validation" novalidate>
+
+					</div>
+					<div class="col-md-7 col-lg-8">
+						<div>
+							<h4>配送先 / 連絡先</h4>
+							<p>漢字/カナは全角、英数字/ハイフンは半角で入力してください。 * は必須項目です</p>
+						</div>
+
 						<div class="row g-3">
 							<div class="col-sm-6">
 								<label for="lastName" class="form-label">性</label> <input
@@ -93,28 +96,123 @@
 								<div class="invalid-feedback">Valid last name is required.</div>
 							</div>
 
+							<div class="col-sm-6">
+								<label for="lastName" class="form-label">性（カナ）</label> <input
+									type="text" class="form-control" id="lastName" placeholder=""
+									value="デンシ" required>
+								<div class="invalid-feedback">Valid first name is
+									required.</div>
+							</div>
+
+							<div class="col-sm-6">
+								<label for="firstName" class="form-label">名（カナ）</label> <input
+									type="text" class="form-control" id="firstName" placeholder=""
+									value="タロウ" required>
+								<div class="invalid-feedback">Valid last name is required.</div>
+							</div>
+
+
 							<div class="col-12">
-								<label for="email" class="form-label">メールアドレス <span
-									class="text-muted">(Optional)</span></label> <input type="email"
-									class="form-control" id="email" placeholder="you@example.com"
-									value="example@jec.ac.jp">
+								<label for="email" class="form-label">メールアドレス</label> <input
+									type="email" class="form-control" id="email"
+									placeholder="you@example.com" value="example@jec.ac.jp">
 								<div class="invalid-feedback">Please enter a valid email
 									address for shipping updates.</div>
 							</div>
 
-						</div>
-
-						<hr class="my-4">
-
-						<h4 class="mb-3">アドレス追加</h4>
-						<div class="row g-3">
-							<div class="col-12">
-								<label for="address" class="form-label">Address</label> <input
-									type="text" class="form-control" id="address"
-									placeholder="1234 Main St" required>
+							<div class="col-sm-4">
+								<label for="zip1" class="form-label">郵便番号 (半角数字) </label><input
+									type="text" class="form-control" id="zip1" name="zip1"
+									placeholder="" maxlength="7" required>
 								<div class="invalid-feedback">Please enter your shipping
 									address.</div>
 							</div>
+
+							<div class="col-sm-8"></div>
+
+							<div class="col-sm-4">
+								<label for="country" class="form-label">都道府県</label> <select
+									class="form-select" id="country" required>
+									<option value="">都道府県</option>
+									<option value="01">北海道</option>
+									<option value="02">青森県</option>
+									<option value="03">岩手県</option>
+									<option value="04">宮城県</option>
+									<option value="05">秋田県</option>
+									<option value="06">山形県</option>
+									<option value="07">福島県</option>
+									<option value="13">東京都</option>
+									<option value="14">神奈川県</option>
+									<option value="11">埼玉県</option>
+									<option value="12">千葉県</option>
+									<option value="08">茨城県</option>
+									<option value="09">栃木県</option>
+									<option value="10">群馬県</option>
+									<option value="19">山梨県</option>
+									<option value="15">新潟県</option>
+									<option value="20">長野県</option>
+									<option value="16">富山県</option>
+									<option value="17">石川県</option>
+									<option value="18">福井県</option>
+									<option value="23">愛知県</option>
+									<option value="21">岐阜県</option>
+									<option value="22">静岡県</option>
+									<option value="24">三重県</option>
+									<option value="27">大阪府</option>
+									<option value="28">兵庫県</option>
+									<option value="26">京都府</option>
+									<option value="25">滋賀県</option>
+									<option value="29">奈良県</option>
+									<option value="30">和歌山県</option>
+									<option value="31">鳥取県</option>
+									<option value="32">島根県</option>
+									<option value="33">岡山県</option>
+									<option value="34">広島県</option>
+									<option value="35">山口県</option>
+									<option value="36">徳島県</option>
+									<option value="37">香川県</option>
+									<option value="38">愛媛県</option>
+									<option value="39">高知県</option>
+									<option value="40">福岡県</option>
+									<option value="41">佐賀県</option>
+									<option value="42">長崎県</option>
+									<option value="43">熊本県</option>
+									<option value="44">大分県</option>
+									<option value="45">宮崎県</option>
+									<option value="46">鹿児島県</option>
+									<option value="47">沖縄県</option>
+								</select>
+								<div class="invalid-feedback">Please select a valid
+									country.</div>
+							</div>
+
+							<div class="col-sm-4">
+								<label for="state" class="form-label">市区町村</label> <input
+									type="text" class="form-control" id="state" name="state"
+									placeholder="新宿区" required>
+								<div class="invalid-feedback">Please provide a valid
+									state.</div>
+							</div>
+
+							<div class="col-sm-4">
+								<label for="town" class="form-label">町村名</label><input
+									type="text" class="form-control" id="town" name="town"
+									placeholder="百人町" required>
+								<div class="invalid-feedback">Zip code required.</div>
+							</div>
+
+							<div class="col-sm-6">
+								<label for="house_number" class="form-label">番地（数字は半角） </label>
+								<input type="text" class="form-control" id="house_number"
+									name="house_number" placeholder="1-1-1">
+							</div>
+
+							<div class="col-sm-6">
+								<label for="building" class="form-label">建物名, 部屋番号 </label><input
+									type="text" class="form-control" id="building" name="building"
+									placeholder="百人町">
+							</div>
+
 
 							<div class="col-12">
 								<label for="address2" class="form-label">Address 2 <span
@@ -122,39 +220,6 @@
 									class="form-control" id="address2"
 									placeholder="Apartment or suite">
 							</div>
-
-							<div class="col-md-5">
-								<label for="country" class="form-label">Country</label> <select
-									class="form-select" id="country" required>
-									<option value="">...</option>
-									<option>日本</option>
-								</select>
-								<div class="invalid-feedback">Please select a valid
-									country.</div>
-							</div>
-
-							<div class="col-md-4">
-								<label for="state" class="form-label">State</label> <select
-									class="form-select" id="state" required>
-									<option value="">...</option>
-									<option>東京</option>
-								</select>
-								<div class="invalid-feedback">Please provide a valid
-									state.</div>
-							</div>
-
-							<div class="col-md-3">
-								<label for="zip" class="form-label">Zip</label> <input
-									type="text" class="form-control" id="zip" placeholder=""
-									required>
-								<div class="invalid-feedback">Zip code required.</div>
-							</div>
-						</div>
-
-						<div class="form-check">
-							<input type="checkbox" class="form-check-input" id="same-address">
-							<label class="form-check-label" for="same-address">Shipping
-								address is the same as my billing address</label>
 						</div>
 
 						<div class="form-check">
@@ -163,66 +228,171 @@
 								information for next time</label>
 						</div>
 
-						<hr class="my-4">
-
-						<h4 class="mb-3">お支払方法</h4>
-
-						<div class="my-3">
+						<div class="accordion" id="accordionExample">
 							<div class="form-check">
-								<input id="credit" name="paymentMethod" type="radio"
-									class="form-check-input" checked required> <label
-									class="form-check-label" for="credit">Credit card</label>
+								<input type="checkbox" class="form-check-input"
+									id="same-address"> <label class="form-check-label"
+									for="same-address" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="false"
+									aria-controls="collapseOne">Shipping address is the
+									same as my billing address</label>
 							</div>
-							<div class="form-check">
-								<input id="debit" name="paymentMethod" type="radio"
-									class="form-check-input" required> <label
-									class="form-check-label" for="debit">Debit card</label>
-							</div>
-							<div class="form-check">
-								<input id="paypal" name="paymentMethod" type="radio"
-									class="form-check-input" required> <label
-									class="form-check-label" for="paypal">PayPal</label>
+
+							<hr class="my-4">
+
+							<div id="collapseOne" class="accordion-collapse collapse"
+								aria-labelledby="same-address"
+								data-bs-parent="#accordionExample">
+								<div class="row g-3">
+									<div class="col-sm-6">
+										<label for="lastName" class="form-label">性</label> <input
+											type="text" class="form-control" id="lastName" placeholder=""
+											value="電子" required>
+										<div class="invalid-feedback">Valid first name is
+											required.</div>
+									</div>
+
+									<div class="col-sm-6">
+										<label for="firstName" class="form-label">名</label> <input
+											type="text" class="form-control" id="firstName"
+											placeholder="" value="太郎" required>
+										<div class="invalid-feedback">Valid last name is
+											required.</div>
+									</div>
+
+									<div class="col-sm-6">
+										<label for="lastName" class="form-label">性（カナ）</label> <input
+											type="text" class="form-control" id="lastName" placeholder=""
+											value="デンシ" required>
+										<div class="invalid-feedback">Valid first name is
+											required.</div>
+									</div>
+
+									<div class="col-sm-6">
+										<label for="firstName" class="form-label">名（カナ）</label> <input
+											type="text" class="form-control" id="firstName"
+											placeholder="" value="タロウ" required>
+										<div class="invalid-feedback">Valid last name is
+											required.</div>
+									</div>
+
+
+									<div class="col-12">
+										<label for="email" class="form-label">メールアドレス</label> <input
+											type="email" class="form-control" id="email"
+											placeholder="you@example.com" value="example@jec.ac.jp">
+										<div class="invalid-feedback">Please enter a valid email
+											address for shipping updates.</div>
+									</div>
+
+									<div class="col-sm-4">
+										<label for="zip1" class="form-label">郵便番号 (半角数字) </label><input
+											type="text" class="form-control" id="zip1" name="zip1"
+											placeholder="" maxlength="7" required>
+										<div class="invalid-feedback">Please enter your shipping
+											address.</div>
+									</div>
+
+									<div class="col-sm-8"></div>
+
+									<div class="col-sm-4">
+										<label for="country" class="form-label">都道府県</label> <select
+											class="form-select" id="country" required>
+											<option value="">都道府県</option>
+											<option value="01">北海道</option>
+											<option value="02">青森県</option>
+											<option value="03">岩手県</option>
+											<option value="04">宮城県</option>
+											<option value="05">秋田県</option>
+											<option value="06">山形県</option>
+											<option value="07">福島県</option>
+											<option value="13">東京都</option>
+											<option value="14">神奈川県</option>
+											<option value="11">埼玉県</option>
+											<option value="12">千葉県</option>
+											<option value="08">茨城県</option>
+											<option value="09">栃木県</option>
+											<option value="10">群馬県</option>
+											<option value="19">山梨県</option>
+											<option value="15">新潟県</option>
+											<option value="20">長野県</option>
+											<option value="16">富山県</option>
+											<option value="17">石川県</option>
+											<option value="18">福井県</option>
+											<option value="23">愛知県</option>
+											<option value="21">岐阜県</option>
+											<option value="22">静岡県</option>
+											<option value="24">三重県</option>
+											<option value="27">大阪府</option>
+											<option value="28">兵庫県</option>
+											<option value="26">京都府</option>
+											<option value="25">滋賀県</option>
+											<option value="29">奈良県</option>
+											<option value="30">和歌山県</option>
+											<option value="31">鳥取県</option>
+											<option value="32">島根県</option>
+											<option value="33">岡山県</option>
+											<option value="34">広島県</option>
+											<option value="35">山口県</option>
+											<option value="36">徳島県</option>
+											<option value="37">香川県</option>
+											<option value="38">愛媛県</option>
+											<option value="39">高知県</option>
+											<option value="40">福岡県</option>
+											<option value="41">佐賀県</option>
+											<option value="42">長崎県</option>
+											<option value="43">熊本県</option>
+											<option value="44">大分県</option>
+											<option value="45">宮崎県</option>
+											<option value="46">鹿児島県</option>
+											<option value="47">沖縄県</option>
+										</select>
+										<div class="invalid-feedback">Please select a valid
+											country.</div>
+									</div>
+
+									<div class="col-sm-4">
+										<label for="state" class="form-label">市区町村</label> <input
+											type="text" class="form-control" id="state" name="state"
+											placeholder="新宿区" required>
+										<div class="invalid-feedback">Please provide a valid
+											state.</div>
+									</div>
+
+									<div class="col-sm-4">
+										<label for="town" class="form-label">町村名</label><input
+											type="text" class="form-control" id="town" name="town"
+											placeholder="百人町" required>
+										<div class="invalid-feedback">Zip code required.</div>
+									</div>
+
+									<div class="col-sm-6">
+										<label for="house_number" class="form-label">番地（数字は半角）
+										</label> <input type="text" class="form-control" id="house_number"
+											name="house_number" placeholder="1-1-1">
+									</div>
+
+									<div class="col-sm-6">
+										<label for="building" class="form-label">建物名, 部屋番号 </label><input
+											type="text" class="form-control" id="building"
+											name="building" placeholder="百人町">
+									</div>
+
+
+									<div class="col-12">
+										<label for="address2" class="form-label">Address 2 <span
+											class="text-muted">(Optional)</span></label> <input type="text"
+											class="form-control" id="address2"
+											placeholder="Apartment or suite">
+									</div>
+								</div>
 							</div>
 						</div>
 
-						<div class="row gy-3">
-							<div class="col-md-6">
-								<label for="cc-name" class="form-label">Name on card</label> <input
-									type="text" class="form-control" id="cc-name" placeholder=""
-									required> <small class="text-muted">Full name
-									as displayed on card</small>
-								<div class="invalid-feedback">Name on card is required</div>
-							</div>
+					</div>
 
-							<div class="col-md-6">
-								<label for="cc-number" class="form-label">Credit card
-									number</label> <input type="text" class="form-control" id="cc-number"
-									placeholder="" required>
-								<div class="invalid-feedback">Credit card number is
-									required</div>
-							</div>
-
-							<div class="col-md-3">
-								<label for="cc-expiration" class="form-label">Expiration</label>
-								<input type="text" class="form-control" id="cc-expiration"
-									placeholder="" required>
-								<div class="invalid-feedback">Expiration date required</div>
-							</div>
-
-							<div class="col-md-3">
-								<label for="cc-cvv" class="form-label">CVV</label> <input
-									type="text" class="form-control" id="cc-cvv" placeholder=""
-									required>
-								<div class="invalid-feedback">Security code required</div>
-							</div>
-						</div>
-
-						<hr class="my-4">
-
-						<button class="w-100 btn btn-primary btn-lg" type="submit">情報保存</button>
-					</form>
 				</div>
-			</div>
+			</form>
 		</div>
 	</main>
 
