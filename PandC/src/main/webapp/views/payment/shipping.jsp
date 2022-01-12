@@ -31,13 +31,13 @@
 			<div class="text-center mb-5">
 				<h3>ご注文手続き</h3>
 			</div>
-			<div class="progress mx-auto my-4" style="height: 5px; width: 75%">
+			<div class="progress mx-auto my-4" style="height: 3px; width: 75%">
 				<div
 					class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-					role="progressbar" style="width: 20%;" aria-valuenow="100"
+					role="progressbar" style="width: 33%;" aria-valuenow="100"
 					aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<form action="../payment.jsp" method="POST" class="needs-validation"
+			<form action="payment.jsp" method="POST" class="needs-validation"
 				novalidate>
 				<div class="row g-5 mb-5">
 					<div class="col-md-5 col-lg-4 order-md-last">
@@ -215,17 +215,15 @@
 
 
 							<div class="col-12">
-								<label for="address2" class="form-label">Address 2 <span
-									class="text-muted">(Optional)</span></label> <input type="text"
-									class="form-control" id="address2"
-									placeholder="Apartment or suite">
+								<label for="address2" class="form-label">電話番号</label> <input type="text"
+									class="form-control" id="phone_number"
+									placeholder="">
 							</div>
 						</div>
 
-						<div class="form-check">
+						<div class="form-check mt-3">
 							<input type="checkbox" class="form-check-input" id="save-info">
-							<label class="form-check-label" for="save-info">Save this
-								information for next time</label>
+							<label class="form-check-label" for="save-info">配送先/連絡先の保存</label>
 						</div>
 
 						<div class="accordion" id="accordionExample">
@@ -234,8 +232,7 @@
 									id="same-address"> <label class="form-check-label"
 									for="same-address" data-bs-toggle="collapse"
 									data-bs-target="#collapseOne" aria-expanded="false"
-									aria-controls="collapseOne">Shipping address is the
-									same as my billing address</label>
+									aria-controls="collapseOne">別の住所と連絡先を使用する</label>
 							</div>
 
 							<hr class="my-4">
@@ -380,10 +377,9 @@
 
 
 									<div class="col-12">
-										<label for="address2" class="form-label">Address 2 <span
-											class="text-muted">(Optional)</span></label> <input type="text"
-											class="form-control" id="address2"
-											placeholder="Apartment or suite">
+										<label for="address2" class="form-label">電話番号</label> <input type="text"
+									class="form-control" id="phone_number"
+									placeholder="">
 									</div>
 								</div>
 							</div>
