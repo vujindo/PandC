@@ -56,8 +56,8 @@
 							class="text-danger fw-bold">63,700円</span> <br> 税込・配送料込
 					</div>
 					<div class="py-3">
-						<a type="button" href="../cart/cart2.jsp" class="btn btn-success px-5">カートに入れる</a>
-						<a
+						<a type="button" href="../cart/cart2.jsp"
+							class="btn btn-success px-5">カートに入れる</a> <a
 							href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
 							class="btn btn-primary px-3">製品を比較</a>
 					</div>
@@ -131,39 +131,40 @@
 							</td>
 						</tr>
 						<tr>
-							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
+							<td>実効解像度<br>3840 x 1600 (DisplayPort: 144 Hz, HDMI: 85
+								Hz)
 							</td>
-							<td>カーブスクリーン<br> 対応
-							</td>
-						</tr>
-						<tr>
-							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate
-							</td>
-							<td>特徴<br> AlienFX照明システム
+							<td>画素ピッチ<br>0.229 mm
 							</td>
 						</tr>
 						<tr>
-							<td>パネルタイプ<br> Nano IPS
+							<td>輝度<br>450 cd/m²
 							</td>
-							<td>アスペクト比<br> 21:9
-							</td>
-						</tr>
-						<tr>
-							<td>機器タイプ<br> LEDバックライト付液晶モニター - 37.5"
-							</td>
-							<td>カーブスクリーン<br> 対応
+							<td>コントラスト比<br>1000:1
 							</td>
 						</tr>
 						<tr>
-							<td>アダプティブシンク技術<br> NVIDIA G-Sync Ultimate
+							<td>応答時間<br>1 ms （GtoG）
 							</td>
-							<td>特徴<br> AlienFX照明システム
+							<td>最大表示色<br>10.7億色
 							</td>
 						</tr>
 						<tr>
-							<td>パネルタイプ<br> Nano IPS
+							<td>入力コネクタ<br>2xHDMI, DisplayPort
 							</td>
-							<td>アスペクト比<br> 21:9
+							<td>ディスプレイ位置調整<br>旋回式, 傾斜式
+							</td>
+						</tr>
+						<tr>
+							<td>スクリーンコーティング<br>反射防止, 3Hハードコーティング
+							</td>
+							<td>寸法 (幅x奥行きx高さ) - スタンド含む <br>89.49 cm x 29.35 cm x 44.97 cm
+							</td>
+						</tr>
+						<tr>
+							<td>準拠規格<br>DisplayPort 1.4
+							</td>
+							<td>
 							</td>
 						</tr>
 					</tbody>
