@@ -83,12 +83,12 @@
 							<div class="form-check">
 								<input id="credit" name="paymentMethod" type="radio"
 									class="form-check-input" checked required> <label
-									class="form-check-label" for="credit">Credit card</label>
+									class="form-check-label" for="credit">クレジットカード</label>
 							</div>
 							<div class="form-check">
 								<input id="debit" name="paymentMethod" type="radio"
 									class="form-check-input" required> <label
-									class="form-check-label" for="debit">Debit card</label>
+									class="form-check-label" for="debit">デビットカード</label>
 							</div>
 							<div class="form-check">
 								<input id="paypal" name="paymentMethod" type="radio"
@@ -107,7 +107,7 @@
 							</div>
 
 							<div class="col-md-6">
-								<label for="cc-number" class="form-label">クレジットカード番号</label> <input
+								<label for="cc-number" class="form-label">カード番号</label> <input
 									type="text" class="form-control" id="cc-number" placeholder=""
 									required>
 								<div class="invalid-feedback">Credit card number is
