@@ -37,7 +37,7 @@
 					role="progressbar" style="width: 100%;" aria-valuenow="100"
 					aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<form action="confirm.jsp" method="POST" class="needs-validation"
+			<form action="ordered.jsp" method="POST" class="needs-validation"
 				novalidate>
 				<div class="row g-5 mb-5">
 					<div class="col-md-5 col-lg-4 order-md-last">
@@ -69,7 +69,7 @@
 						</ul>
 						
 						<div class="mb-3">
-							<button class="w-100 btn btn-primary btn-lg" type="submit">ご入力情報の確認へ進む</button>
+							<button class="w-100 btn btn-primary btn-lg" type="submit">お支払へ進む</button>
 						</div>
 					</div>
 					
@@ -82,10 +82,8 @@
 						<div class="row g-3">
 							<div class="col-sm-4">
 								<p>
-									<strong>名前</strong> <br>菅原　太郎
+									<strong>名前</strong> <br>電子　太郎
 								</p>
-								
-								
 							</div>
 							
 							<div class="col-sm-4">
@@ -102,13 +100,31 @@
 							
 							<div class="col-sm-12">
 								<p>
-									<strong>配送先</strong> <br>〒169-0073 東京都新宿区百人町１丁目２５−４ 日本電子専門学校 本校
+									<strong>配送先</strong> <br>〒169-0073 <br> 東京都新宿区百人町１丁目２５−４ 日本電子専門学校 本校
 								</p>
 							</div>
 							
 							<div class="col-sm-12">
 								<p>
-									
+									<strong>建物名, 部屋番号</strong> <br>日本電子専門学校 本校
+								</p>
+							</div>
+							
+							<div class="col-sm-12">
+								<p>
+									<strong>お支払方法</strong> <br>クレジットカード
+								</p>
+							</div>
+							
+							<div class="col-sm-6">
+								<p>
+									<strong>カード名義</strong> <br>デンシタロウ
+								</p>
+							</div>
+							
+							<div class="col-sm-6">
+								<p>
+									<strong>カード番号</strong> <br> *****1111
 								</p>
 							</div>
 						</div>
