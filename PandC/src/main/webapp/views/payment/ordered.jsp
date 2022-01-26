@@ -31,6 +31,7 @@
 			<div class="text-center mb-5">
 				<h3>ご注文完了</h3>
 				<p>ご注文いただき、ありがとうございました。</p>
+				<img src="https://cdn2.iconfinder.com/data/icons/shopping-e-commerce-2-1/32/Success-Place-Order-Complete-Shopping-Tick-512.png" alt="">
 			</div>
 			
 		</div>

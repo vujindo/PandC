@@ -215,8 +215,8 @@
 
 
 							<div class="col-12">
-								<label for="address2" class="form-label">電話番号</label> <input type="text"
-									class="form-control" id="phone_number"
+								<label for="address2" class="form-label">電話番号</label> <input
+									type="text" class="form-control" id="phone_number"
 									placeholder="">
 							</div>
 						</div>
@@ -227,12 +227,12 @@
 						</div>
 
 						<div class="accordion" id="accordionExample">
-							<div class="form-check">
+							<div class="form-check" data-bs-toggle="collapse"
+								data-bs-target="#collapseOne" aria-expanded="false"
+								aria-controls="collapseOne">
 								<input type="checkbox" class="form-check-input"
 									id="same-address"> <label class="form-check-label"
-									for="same-address" data-bs-toggle="collapse"
-									data-bs-target="#collapseOne" aria-expanded="false"
-									aria-controls="collapseOne">別の住所と連絡先を使用する</label>
+									for="same-address">別の住所と連絡先を使用する</label>
 							</div>
 
 							<hr class="my-4">
@@ -377,9 +377,9 @@
 
 
 									<div class="col-12">
-										<label for="address2" class="form-label">電話番号</label> <input type="text"
-									class="form-control" id="phone_number"
-									placeholder="">
+										<label for="phone_number" class="form-label">電話番号</label> <input
+											type="text" class="form-control" id="phone_number"
+											placeholder="">
 									</div>
 								</div>
 							</div>
