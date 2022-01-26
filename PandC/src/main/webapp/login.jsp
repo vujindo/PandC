@@ -26,7 +26,8 @@
 		<a href="index.jsp"> <img class="mt-4" src="img/P&C_logo.png"
 			alt="" width="80" height="80" role="img" aria-label="Bootstrap">
 		</a>
-	</header><hr>
+	</header>
+	<hr>
 
 	<main class="col-lg-10 mx-auto p-1 py-md-3">
 		<div class="row g-5">
@@ -51,6 +52,23 @@
 					</div>
 					<button class="w-50 btn btn-outline-primary my-2" type="submit">サインイン</button>
 				</form>
+				<div>
+					<a data-bs-toggle="collapse" href="#collapseExample" role="button"
+						aria-expanded="false" aria-controls="collapseExample">パスワード忘れた？</a>
+					<div class="collapse" id="collapseExample">
+						<div class="my-3">
+							<p>
+								アカウント作成時に登録したEメールアドレスを入力し、<strong>「パスワードのリセット」</strong>をクリックします。<br>
+								パスワードをリセットするページへのリンクをEメールでお送りします。
+							</p>
+							<div class="">
+								<label>メールアドレス</label> <input type="email"
+									class="form-control w-75" placeholder="name@example.com">
+								<button class="w-50 btn btn-primary my-2" type="submit">パスワードのリセット</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div
@@ -95,16 +113,15 @@
 						</label>
 					</div>
 					<button class="w-100 btn btn-primary my-2" type="submit">アカウントの作成</button>
-					<button class="w-100 btn btn-outline-primary my-2"
-						type="button">法人のアカウントの新規作成</button>
+					<button class="w-100 btn btn-outline-primary my-2" type="button">法人のアカウントの新規作成</button>
 					<p class="mt-5 mb-3 text-muted">&copy; 2021 CBL ,Inc. All
 						rights reserved.</p>
 				</form>
 			</div>
 		</div>
 	</main>
-	
+
 	<jsp:include page="views/layouts/footer.jsp" />
-	
+
 </body>
 </html>

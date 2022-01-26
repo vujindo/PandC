@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html lang="ja" class="h-100">
 <head>
 <meta charset="UTF-8">
@@ -20,8 +19,6 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
-	rel="stylesheet">
 <link href="${pageContext.request.contextPath}/css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
@@ -30,18 +27,33 @@
 </head>
 <body class="d-flex flex-column h-100">
 
-	<jsp:include page="../layouts/header.jsp" />
+	<jsp:include page="../layouts/header_user.jsp" />
 
-	<main class="flex-shrink-0">
-		<div class="text-center mt-5">
-			<h2>ご利用いただきありがとうございます。</h2>
-			<p>
-				お客様が登録されたメールアドレスにメール確認URLをお送りされました。 <br>お客様のメールを確認してそのURLをクリックして終了します。
-			</p>
-			<p>
-						<a href="../auth/home.jsp" class="btn btn-primary my-2">ホームページへ戻る</a> <a
-							href="#" onclick="history.back(-1);return false;" class="btn btn-secondary my-2">買い物を続く</a>
-					</p>
+	<main>
+		<div class="container">
+			<h2>パスワードの変更</h2>
+			<div>
+				<form>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">新しいパスワード</label>
+						<input type="email" class="form-control" id="exampleInputEmail1"
+							aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">We'll never share your
+							email with anyone else.</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">新しいパスワード</label>
+						<input type="password" class="form-control"
+							id="exampleInputPassword1">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check
+							me out</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
 		</div>
 	</main>
 
