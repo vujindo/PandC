@@ -46,6 +46,7 @@
 								<div>
 									<h6 class="my-0 text-danger">63,700円 割引額合計</h6>
 									<small class="text-muted">Brief description</small>
+
 								</div>
 							</li>
 							<li class="list-group-item d-flex justify-content-between lh-sm">
@@ -67,70 +68,93 @@
 								</div> <span class="text-success fw-bold">193,480円</span>
 							</li>
 						</ul>
-						
+
 						<div class="mb-3">
 							<button class="w-100 btn btn-primary btn-lg" type="submit">お支払へ進む</button>
 						</div>
 					</div>
-					
+
 					<div class="col-md-7 col-lg-8">
 						<div>
 							<h4>ご入力情報の確認</h4>
 							<p></p>
 						</div>
-						
+
 						<div class="row g-3">
 							<div class="col-sm-4">
 								<p>
-									<strong>名前</strong> <br>電子　太郎
+									<strong>名前</strong> <br>電子 太郎
 								</p>
 							</div>
-							
+
 							<div class="col-sm-4">
 								<p>
 									<strong>メールアドレス</strong> <br>sugawara@gmail.com
 								</p>
 							</div>
-							
+
 							<div class="col-sm-4">
 								<p>
 									<strong>電話番号</strong> <br>08077989157
 								</p>
 							</div>
-							
+
 							<div class="col-sm-12">
 								<p>
-									<strong>配送先</strong> <br>〒169-0073 <br> 東京都新宿区百人町１丁目２５−４ 日本電子専門学校 本校
+									<strong>配送先</strong> <br>〒169-0073 <br>
+									東京都新宿区百人町１丁目２５−４ 日本電子専門学校 本校
 								</p>
 							</div>
-							
+
 							<div class="col-sm-12">
 								<p>
 									<strong>建物名, 部屋番号</strong> <br>日本電子専門学校 本校
 								</p>
 							</div>
-							
-							<div class="col-sm-12">
+
+							<div class="col-sm-4">
 								<p>
 									<strong>お支払方法</strong> <br>クレジットカード
 								</p>
 							</div>
-							
-							<div class="col-sm-6">
+
+							<div class="col-sm-4">
 								<p>
 									<strong>カード名義</strong> <br>デンシタロウ
 								</p>
 							</div>
-							
-							<div class="col-sm-6">
+
+							<div class="col-sm-4">
 								<p>
 									<strong>カード番号</strong> <br> *****1111
 								</p>
 							</div>
 						</div>
+						<hr>
+						<div>
+							<h4>配送方法</h4>
+							<p>標準配送</p>
+							<div class="row p-2">
+								<div class="col-2 text-start">
+									<img src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg" width="100" height="100" alt="">
+								</div>
+								<div class="col-6">
+									DELL ALIENWARE AW3821DW
+									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)
+									<br>数量　1
+								</div>
+							<div class="row">
+								<div class="col-2 text-start"></div>
+								<div class="col-6 bg-light p-2">
+									<strong>2022/02/01</strong> 頃到着予定
+								</div>
+							</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</form>
+
 		</div>
 	</main>
 

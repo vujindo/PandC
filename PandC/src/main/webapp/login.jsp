@@ -20,7 +20,7 @@
 </script>
 
 </head>
-<body>
+<body class="d-flex flex-column h-100 bg-light">
 
 	<header class="site-header text-center">
 		<a href="index.jsp"> <img class="mt-4" src="img/P&C_logo.png"
@@ -61,11 +61,13 @@
 								アカウント作成時に登録したEメールアドレスを入力し、<strong>「パスワードのリセット」</strong>をクリックします。<br>
 								パスワードをリセットするページへのリンクをEメールでお送りします。
 							</p>
-							<div class="">
-								<label>メールアドレス</label> <input type="email"
-									class="form-control w-75" placeholder="name@example.com">
-								<button class="w-50 btn btn-primary my-2" type="submit">パスワードのリセット</button>
-							</div>
+							<form action="./mail/pw_link.jsp" method="POST">
+								<div class="">
+									<label>メールアドレス</label> <input type="email"
+										class="form-control w-75" placeholder="name@example.com">
+									<button class="w-50 btn btn-primary my-2" type="submit">パスワードのリセット</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
