@@ -257,7 +257,7 @@
 						</div>
 					</div>
 					<div class="col align-items-start">
-						<div class=" shadow">
+						<div class="card shadow">
 							<img
 								src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
 								class="card-img-top px-4">
