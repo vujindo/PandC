@@ -2,18 +2,16 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 
-import model.maker;
+import model.user;
 
-public class DaoController {
+public class UserDao {
 	private Connection con = null;
 
 	// オブジェクト生成時に DB に接続
-	public DaoController() {
+	public UserDao() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
@@ -28,8 +26,7 @@ public class DaoController {
 			System.exit(1);
 		}
 	}
-
-	//DB 切断
+	
 	public void connectionClose() {
 		try {
 			con.close();
@@ -37,24 +34,17 @@ public class DaoController {
 			e.printStackTrace();
 		}
 	}
-
-	public ArrayList<maker> findMaker() {
-		String sql = "SELECT * FROM maker";
-		ArrayList<maker> ary = null;
+	
+	public void addUser(user user) {
+		String sql = "INSERT INTO user(userName,userMail,password) VALUES (?,?,?)";
 		try {
-			Statement state = con.createStatement();
-			ResultSet rs = state.executeQuery(sql);
-			ary = new ArrayList<maker>();
-			while (rs.next()) {
-				maker one = new maker();
-				one.setMakerName(rs.getString("makerName"));
-				one.setMakerImg(rs.getString("makerImg"));
-				ary.add(one);
-			}
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, user.getUserName());
+			state.setString(2, user.getUserMail());
+			state.setString(3, user.getPassword());
+			state.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return ary;
 	}
-
 }

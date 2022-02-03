@@ -76,24 +76,24 @@
 			<div
 				class="col-md-6 bg-light p-4 border-top border-end border-bottom rounded-end">
 				<h2>アカウントの作成</h2>
-				<form action="views/auth/mail_confirm.jsp" method="">
+				<form action="./UserController" method="POST">
 					<div class="form-floating">
-						<input type="text" class="form-control" id="floatingInput"
+						<input type="text" class="form-control" name="lastname" id="floatingInput"
 							placeholder=""> <label for="floatingInput">性<span
 							class="text-danger">*</span></label>
 					</div>
 					<div class="form-floating">
-						<input type="text" class="form-control my-2" id="floatingInput"
+						<input type="text" class="form-control my-2" name="firstname" id="floatingInput"
 							placeholder=""> <label for="floatingInput">名<span
 							class="text-danger">*</span></label>
 					</div>
 					<div class="form-floating">
-						<input type="email" class="form-control my-2" id="floatingInput"
+						<input type="email" class="form-control my-2" name="mail" id="floatingInput"
 							placeholder=""> <label for="floatingInput">メールアドレス<span
 							class="text-danger">*</span></label>
 					</div>
 					<div class="form-floating">
-						<input type="password" class="form-control my-2"
+						<input type="password" class="form-control my-2" name="pass"
 							id="floatingPassword" placeholder=""> <label
 							for="floatingPassword">パスワード<span class="text-danger">*</span></label>
 					</div>

@@ -39,7 +39,7 @@
 				お客様が登録されたメールアドレスにメール確認URLをお送りされました。 <br>お客様のメールを確認してそのURLをクリックして終了します。
 			</p>
 			<p>
-						<a href="../auth/home.jsp" class="btn btn-primary my-2">ホームページへ戻る</a> <a
+						<a href="home.jsp" class="btn btn-primary my-2">ホームページへ戻る</a> <a
 							href="#" onclick="history.back(-1);return false;" class="btn btn-secondary my-2">買い物を続く</a>
 					</p>
 		</div>
