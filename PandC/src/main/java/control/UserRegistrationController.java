@@ -16,7 +16,7 @@ import model.user;
  * Servlet implementation class UserController
  */
 @WebServlet("/UserController")
-public class UserController extends HttpServlet {
+public class UserRegistrationController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	/**
