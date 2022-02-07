@@ -9,10 +9,10 @@
 				<img src="${pageContext.request.contextPath}/img/P&C_logo.png" class="bi me-2" width="65" height="55"
 				role="img" aria-label="Bootstrap">
 			</a>
-
+<!--${pageContext.request.contextPath}/index.jsp -->
 			<ul
 				class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li><a href="${pageContext.request.contextPath}/index.jsp" class="nav-link px-2 link-secondary">ホーム</a></li>
+				<li><a href="./HomeController" class="nav-link px-2 link-secondary">ホーム</a></li>
 				<div class="dropdown">
 					<button class="btn" type="button"
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"

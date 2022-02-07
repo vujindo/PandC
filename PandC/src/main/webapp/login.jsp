@@ -76,7 +76,7 @@
 			<div
 				class="col-md-6 bg-light p-4 border-top border-end border-bottom rounded-end">
 				<h2>アカウントの作成</h2>
-				<form action="./UserController" method="POST">
+				<form action="./UserRegistrationController" method="POST">
 					<div class="form-floating">
 						<input type="text" class="form-control" name="lastname" id="floatingInput"
 							placeholder=""> <label for="floatingInput">性<span

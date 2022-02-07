@@ -47,4 +47,8 @@ public class UserDao {
 			e.printStackTrace();
 		}
 	}
+	
+	public void login(user user) {
+		
+	}
 }
