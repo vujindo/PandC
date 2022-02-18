@@ -32,6 +32,7 @@
 <%
 @SuppressWarnings("unchecked")
 ArrayList<maker> makers = (ArrayList<maker>) session.getAttribute("makerlist");
+session.setAttribute("login_status",0);
 %>
 
 </head>
@@ -158,6 +159,7 @@ ArrayList<maker> makers = (ArrayList<maker>) session.getAttribute("makerlist");
 				</div>
 			</div>
 		</div>
+		
 		<div class="bg-white mt-4">
 			<div class="container">
 				<h2 class="pt-5">ご利用いただき、ありがとうございます</h2>

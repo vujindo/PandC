@@ -6,6 +6,7 @@ public class user implements Serializable {
 	private String userName;
 	private String userMail;
 	private String password;
+	private int login_status;
 	
 	public user() {
 		super();
@@ -36,5 +37,11 @@ public class user implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+	public int getLogin_status() {
+		return login_status;
+	}
+
+	public void setLogin_status(int login_status) {
+		this.login_status = login_status;
+	}
 }

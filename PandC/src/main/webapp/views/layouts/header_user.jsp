@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="model.user,java.util.ArrayList"%>
+
+<%
+	@SuppressWarnings("unchecked")
+	ArrayList<user> name = (ArrayList<user>)session.getAttribute("u_info");
+%>
+
 <header class="py-3 mb-3border-bottom bg-white">
 	<div class="container-fluid d-grid gap-3 align-items-center">
 		<div
@@ -72,7 +79,7 @@
 					alt="mdo" width="32" height="32" class="rounded-circle">
 				</a>
 				<ul class="dropdown-menu text-lg" aria-labelledby="dropdownUser1">
-					<p class="m-2 fw-bold">ようこそ、性名</p>
+					<p class="m-2 fw-bold">ようこそ、<% for (user u : name) { out.print(u.getUserName()); } %></p>
 					<li><a class="dropdown-item" href="../auth/profile.jsp">マイアカウント</a></li>
 					<li><a class="dropdown-item" href="../auth/user_setting.jsp">．．．</a></li>
 					<li><hr class="dropdown-divider"></li>

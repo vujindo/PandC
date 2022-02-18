@@ -1,6 +1,7 @@
 package control;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.UserDao;
 import model.user;
@@ -15,8 +17,8 @@ import model.user;
 /**
  * Servlet implementation class UserController
  */
-@WebServlet("/UserRegistrationController")
-public class UserRegistrationController extends HttpServlet {
+@WebServlet("/UserLoginController")
+public class UserLoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	/**
@@ -24,18 +26,32 @@ public class UserRegistrationController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String lastname = request .getParameter("lastname");
-		String firstname = request .getParameter("firstname");
-		String name = lastname + " " + firstname;
 		String mail = request.getParameter("mail");
 		String pass = request.getParameter("pass");
-		user user = new user(name,mail,pass);
+		String u_name = null;
+		int login_status = 0;
+		String path = "";
 		
 		UserDao ud = new UserDao();
-		ud.addUser(user);
-		ud.connectionClose();
+		ArrayList<user> u_info = ud.login(mail, pass);
+		for (user u : u_info) {
+			u_name = u.getUserName();
+			mail = u.getUserMail();
+			pass = u.getPassword();
+			login_status = u.getLogin_status();
+		}
+		if (login_status == 1) {
+			path = "views/auth/home.jsp";
+			
+			HttpSession session = request.getSession();
+			session.setAttribute("u_info",u_info);
+			session.setAttribute("login_status", login_status);
+		}else if (login_status == 0) {
+			path = "login.jsp";
+		}
 		
-		RequestDispatcher rd = request.getRequestDispatcher("views/auth/mail_confirm.jsp");
+		ud.connectionClose();
+		RequestDispatcher rd = request.getRequestDispatcher(path);
 		rd.forward(request, response);
 	}
 
