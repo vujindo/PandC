@@ -33,14 +33,14 @@
 		<div class="row g-5">
 			<div class="col-md-6 border rounded-start p-4">
 				<h2>サインイン</h2>
-				<form action="views/auth/home.jsp" method="">
+				<form action="./UserLoginController" method="POST">
 					<div class="form-floating">
-						<input type="email" class="form-control w-75" id="floatingInput"
+						<input type="email" class="form-control w-75" name="mail" id="floatingInput"
 							placeholder="name@example.com"> <label
 							for="floatingInput">メールアドレス</label>
 					</div>
 					<div class="form-floating">
-						<input type="password" class="form-control w-75 my-2"
+						<input type="password" class="form-control w-75 my-2" name="pass"
 							id="floatingPassword" placeholder="Password"> <label
 							for="floatingPassword">パスワード</label>
 					</div>

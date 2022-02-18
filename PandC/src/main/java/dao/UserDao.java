@@ -3,7 +3,9 @@ package dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import model.user;
 
@@ -48,7 +50,36 @@ public class UserDao {
 		}
 	}
 	
-	public void login(user user) {
+	public ArrayList<user> login(String userMail, String password) {
+		String sql = "SELECT * FROM user WHERE userMail LIKE ?";
+		int login_status = 0;
+		ArrayList<user> ary = new ArrayList<user>();
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, userMail);
+			state.execute();
+			ResultSet rs = state.getResultSet();
+			while (rs.next()) {
+				if (rs.getString("password").equals(password)) {
+					user u = new user();
+					u.setUserName(rs.getString("userName"));
+					u.setUserMail(rs.getString("userMail"));
+					u.setPassword(rs.getString("password"));
+					u.setLogin_status(1);
+					ary.add(u);
+				}else {
+					user u = new user();
+					u.setLogin_status(0);
+					ary.add(u);
+				}
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ary;
+	}
+	
+	public void findUser() {
 		
 	}
 }

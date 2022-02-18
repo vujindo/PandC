@@ -29,12 +29,15 @@ public class HomeController extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		
+		int login_status = 0;
+		
 		DaoController dc = new DaoController();
 		ArrayList<maker> mlist = dc.findMaker();
 		dc.connectionClose();
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("makerlist",mlist);
+		session.setAttribute("login_status", login_status);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		rd.forward(request, response);
