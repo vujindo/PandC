@@ -23,7 +23,9 @@ public class UserRegistrationController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
 		String lastname = request .getParameter("lastname");
 		String firstname = request .getParameter("firstname");
 		String name = lastname + " " + firstname;

@@ -22,12 +22,12 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
+<link href="/PandC/css/carousel.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css"
+<link href="/PandC/css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/default.js"></script>
+	src="/PandC/js/default.js"></script>
 
 <%
 @SuppressWarnings("unchecked")
@@ -65,7 +65,7 @@ session.setAttribute("login_status",0);
 							<h1>初心者に向け</h1>
 							<p>
 								<a class="btn btn-lg btn-primary"
-									href="${pageContext.request.contextPath}/views/starter_guide/question1.jsp">今、すぐ調査に</a>
+									href="./views/starter_guide/question1.jsp">今、すぐ調査に</a>
 							</p>
 						</div>
 					</div>
@@ -83,7 +83,7 @@ session.setAttribute("login_status",0);
 						<div class="carousel-caption">
 							<p>
 								<a class="btn btn-lg btn-warning"
-									href="${pageContext.request.contextPath}/views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
+									href="./views/gaming_pc/gaming_pc.jsp">ゲーミングPC</a>
 							</p>
 						</div>
 					</div>
@@ -103,7 +103,7 @@ session.setAttribute("login_status",0);
 								slide of this carousel.</p>
 							<p>
 								<a class="btn btn-lg btn-primary"
-									href="${pageContext.request.contextPath}/login.jsp">法人はこちら</a>
+									href="./login.jsp">法人はこちら</a>
 							</p>
 						</div>
 					</div>
@@ -182,7 +182,7 @@ session.setAttribute("login_status",0);
 								</p>
 								<a href="../cart/cart_product.jsp" class="btn btn-primary">カートに入れる</a>
 								<a
-									href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
+									href="./views/compare/compare_1.jsp"
 									class="btn btn-outline-primary">比較</a>
 							</div>
 						</div>

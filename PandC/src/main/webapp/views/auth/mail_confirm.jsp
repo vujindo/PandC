@@ -20,12 +20,12 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
+<link href="./css/carousel.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css"
+<link href="./css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/default.js"></script>
+	src="./js/default.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -39,7 +39,7 @@
 				お客様が登録されたメールアドレスにメール確認URLをお送りされました。 <br>お客様のメールを確認してそのURLをクリックして終了します。
 			</p>
 			<p>
-						<a href="./HomeController" class="btn btn-primary my-2">ホームページへ戻る</a> <a
+						<a href="/PandC/index.jsp" class="btn btn-primary my-2">ホームページへ戻る</a> <a
 							href="#" onclick="history.back(-1);return false;" class="btn btn-secondary my-2">買い物を続く</a>
 					</p>
 		</div>

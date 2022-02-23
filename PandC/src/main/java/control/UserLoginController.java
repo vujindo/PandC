@@ -3,7 +3,6 @@ package control;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,7 +24,9 @@ public class UserLoginController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
 		String mail = request.getParameter("mail");
 		String pass = request.getParameter("pass");
 		String u_name = null;
@@ -35,24 +36,23 @@ public class UserLoginController extends HttpServlet {
 		UserDao ud = new UserDao();
 		ArrayList<user> u_info = ud.login(mail, pass);
 		for (user u : u_info) {
-			u_name = u.getUserName();
-			mail = u.getUserMail();
-			pass = u.getPassword();
 			login_status = u.getLogin_status();
 		}
 		if (login_status == 1) {
-			path = "views/auth/home.jsp";
+			path = "./views/auth/home.jsp";
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("u_info",u_info);
 			session.setAttribute("login_status", login_status);
 		}else if (login_status == 0) {
-			path = "login.jsp";
+			path = "./login.jsp";
 		}
 		
 		ud.connectionClose();
-		RequestDispatcher rd = request.getRequestDispatcher(path);
-		rd.forward(request, response);
+//		RequestDispatcher rd = request.getRequestDispatcher(path);
+//		rd.forward(request, response);
+		
+		response.sendRedirect(path);
 	}
 
 }

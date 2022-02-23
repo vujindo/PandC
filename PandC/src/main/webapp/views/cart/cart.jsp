@@ -20,17 +20,17 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
+<link href="<%= request.getContextPath() %>/css/carousel.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css"
+<link href="<%= request.getContextPath() %>/css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/default.js"></script>
+	src="<%= request.getContextPath() %>/js/default.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
 
-	<jsp:include page="../layouts/header_user.jsp" />
+	<jsp:include page="../layouts/header.jsp" />
 
 	<main class="flex-shrink-0">
 		<section class="py-5 text-center container">
