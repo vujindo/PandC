@@ -52,7 +52,6 @@ public class UserDao {
 	
 	public ArrayList<user> login(String userMail, String password) {
 		String sql = "SELECT * FROM user WHERE userMail LIKE ?";
-		int login_status = 0;
 		ArrayList<user> ary = new ArrayList<user>();
 		try {
 			PreparedStatement state = con.prepareStatement(sql);
@@ -65,6 +64,9 @@ public class UserDao {
 					u.setUserName(rs.getString("userName"));
 					u.setUserMail(rs.getString("userMail"));
 					u.setPassword(rs.getString("password"));
+					u.setTel(rs.getString("tel"));
+					u.setZip(rs.getString("postNumber"));
+					u.setAddress(rs.getString("address"));
 					u.setLogin_status(1);
 					ary.add(u);
 				}else {
@@ -77,6 +79,52 @@ public class UserDao {
 			e.printStackTrace();
 		}
 		return ary;
+	}
+	
+	public void changeProfile(String name,String  mail1,String tel, String mail2) {
+		String sql = "UPDATE user SET userName = ? , userMail = ? , tel = ? WHERE userMail = ?";
+		
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, name);
+			state.setString(2, mail1);
+			state.setString(3, tel);
+			state.setString(4, mail2);
+			state.executeUpdate();
+		} catch (SQLException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+	}
+	
+	public void changeAddr(String zip, String addr, String mail) {
+		String sql = "UPDATE user SET postNumber = ? , address = ? WHERE userMail = ?";
+		
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, zip);
+			state.setString(2, addr);
+			state.setString(3, mail);
+			state.executeUpdate();
+		} catch (SQLException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+	}
+	
+	public void changePayment(String zip, String addr, String mail) {
+		String sql = "UPDATE user SET postNumber = ? , address = ? WHERE userMail = ?";
+		
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, zip);
+			state.setString(2, addr);
+			state.setString(3, mail);
+			state.executeUpdate();
+		} catch (SQLException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
 	}
 	
 	public void findUser() {

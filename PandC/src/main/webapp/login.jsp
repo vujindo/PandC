@@ -23,7 +23,7 @@
 <body class="d-flex flex-column h-100 bg-light">
 
 	<header class="site-header text-center">
-		<a href="index.jsp"> <img class="mt-4" src="img/P&C_logo.png"
+		<a href="/PandC/index.jsp"> <img class="mt-4" src="/PandC/img/P&C_logo.png"
 			alt="" width="80" height="80" role="img" aria-label="Bootstrap">
 		</a>
 	</header>

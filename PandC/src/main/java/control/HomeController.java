@@ -3,7 +3,6 @@ package control;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,8 +38,10 @@ public class HomeController extends HttpServlet {
 		session.setAttribute("makerlist",mlist);
 		session.setAttribute("login_status", login_status);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-		rd.forward(request, response);
+//		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+//		rd.forward(request, response);
+		
+		response.sendRedirect("index.jsp");
 	}
 
 }
