@@ -165,7 +165,7 @@ int login_status = (Integer) session.getAttribute("login_status");
 							<div class="accordion-body">
 							
 								<% 
-								if (zip != null){
+								if (zip != null || zip != ""){
 									out.println("<p>");
 									out.println("<strong>郵便番号</strong> <br>");
 									out.println(zip);
@@ -173,7 +173,7 @@ int login_status = (Integer) session.getAttribute("login_status");
 								}
 								%>
 								<% 
-								if (zip != null){
+								if (addr != null || addr != ""){
 									out.println("<p>");
 									out.println("<strong>アドレス</strong> <br>");
 									out.println(addr);

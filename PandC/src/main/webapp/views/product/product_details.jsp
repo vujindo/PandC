@@ -32,7 +32,7 @@
 	data-bs-spy="scroll" data-bs-target="#navbar-example2"
 	data-bs-offset="20" style="position: relative;" tabindex="0">
 
-	<jsp:include page="../layouts/header_user.jsp" />
+	<jsp:include page="../layouts/header.jsp" />
 
 	<main class="flex-shrink-0">
 		<div class="container py-5">
