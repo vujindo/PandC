@@ -30,7 +30,7 @@
 </head>
 <body class="d-flex flex-column h-100">
 
-	<jsp:include page="../layouts/header_user.jsp" />
+	<jsp:include page="../layouts/header.jsp" />
 
 	<main class="flex-shrink-0">
 		<div class="container py-3">

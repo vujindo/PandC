@@ -30,7 +30,7 @@
 </head>
 <body class="d-flex flex-column h-100 bg-light">
 
-	<jsp:include page="../../layouts/header_user.jsp" />
+	<jsp:include page="../../layouts/header.jsp" />
 
 	<main class="flex-shrink-0">
 		<div class="container px-4 py-5" id="icon-grid">
