@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="model.maker,model.user,model.good,java.util.ArrayList"%>
 <!DOCTYPE html>
 <html lang="ja" class="h-100">
 <head>
@@ -26,6 +27,14 @@
 	rel="stylesheet">
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/default.js"></script>
+
+<%
+@SuppressWarnings("unchecked")
+ArrayList<maker> makers = (ArrayList<maker>) session.getAttribute("makerlist");
+ArrayList<user> name = (ArrayList<user>) session.getAttribute("u_info");
+ArrayList<good> goods = (ArrayList<good>) session.getAttribute("goodlist");
+int login_status = (Integer) session.getAttribute("login_status");
+%>
 
 </head>
 <body class="d-flex flex-column h-100 scrollspy-example"

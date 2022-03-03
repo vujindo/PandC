@@ -1,6 +1,7 @@
 package model;
 
 public class good {
+	private String goodID;
 	private String goodsName;
 	private String goodsImg;
 	private String value;
@@ -15,6 +16,13 @@ public class good {
 		this.goodsImg = goodsImg;
 		this.value = value;
 		this.price = price;
+	}
+	
+	public String getGoodID() {
+		return goodID;
+	}
+	public void setGoodID(String goodID) {
+		this.goodID = goodID;
 	}
 	
 	public String getGoodsName() {

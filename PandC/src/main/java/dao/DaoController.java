@@ -47,6 +47,7 @@ public class DaoController {
 			ary = new ArrayList<maker>();
 			while (rs.next()) {
 				maker one = new maker();
+				one.setMakerID(rs.getString("makerID"));
 				one.setMakerName(rs.getString("makerName"));
 				one.setMakerImg(rs.getString("makerImg"));
 				ary.add(one);
