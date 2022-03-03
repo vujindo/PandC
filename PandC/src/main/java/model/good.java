@@ -1,6 +1,6 @@
 package model;
 
-public class good {
+public class good extends maker {
 	private String goodsName;
 	private String goodsImg;
 	private String value;
