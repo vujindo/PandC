@@ -2,6 +2,7 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -48,6 +49,32 @@ public class GoodDao {
 			while (rs.next()) {
 				good one = new good();
 				maker two = new maker();
+				one.setGoodID(rs.getString("goodsID"));
+				one.setGoodsName(rs.getString("goodsName"));
+				one.setGoodsImg(rs.getString("goodsImg"));
+				one.setValue(rs.getString("goodsValue"));
+				one.setPrice(rs.getString("goodsPrice"));
+				one.setMakerName(rs.getString("makerName"));
+				ary.add(one);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ary;
+	}
+	
+	public ArrayList<good> findGood(String id) {
+		String sql = "SELECT * FROM goods WHERE goodsID = ?";
+		ArrayList<good> ary = null;
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, id);
+			ResultSet rs = state.executeQuery(sql);
+			ary = new ArrayList<good>();
+			while (rs.next()) {
+				good one = new good();
+				maker two = new maker();
+				one.setGoodID(rs.getString("goodsID"));
 				one.setGoodsName(rs.getString("goodsName"));
 				one.setGoodsImg(rs.getString("goodsImg"));
 				one.setValue(rs.getString("goodsValue"));
@@ -60,4 +87,5 @@ public class GoodDao {
 		}
 		return ary;
 	}
+	
 }
