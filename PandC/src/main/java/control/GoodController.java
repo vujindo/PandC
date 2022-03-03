@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.GoodDao;
+
 /**
  * Servlet implementation class GoodController
  */
@@ -23,6 +25,10 @@ public class GoodController extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		
+		String goodID = request.getParameter("goodID");
+		
+		GoodDao gd = new GoodDao();
+		gd.findGood(goodID);
 	}
 
 }
