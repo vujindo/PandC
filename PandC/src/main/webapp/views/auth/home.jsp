@@ -172,7 +172,7 @@ int login_status = (Integer) session.getAttribute("login_status");
 					out.println("<div class='card h-100 shadow'>");
 					out.println("<img src='" + g.getGoodsImg() + "' class='card-img-top px-4'>");
 					out.println("<div class='card-body'>");
-					out.println("<h5 class='card-title'><a class='title' href='/Servlet/GoodController?goodID=" + g.getGoodID() + "'>" + g.getMakerName() + "<br>" + g.getGoodsName() + "</a></h5>");
+					out.println("<h5 class='card-title'><a class='title' href='/PandC/GoodController?goodID=" + g.getGoodID() + "'><br>" + g.getGoodsName() + "</a></h5>");
 					out.println("<p class='card-text text-start'>標準価格 " + Integer.parseInt(g.getValue()) + "円 <br> 販売価格 " + Integer.parseInt(g.getPrice()) +  "円 割引額 " +(Integer.parseInt(g.getValue())-Integer.parseInt(g.getPrice())) + "円 <br>税込・配送料込</p>");
 					out.println("<a href='../cart/cart_product.jsp?goodID=" + g.getGoodID() + "' class='btn btn-primary'>カートに入れる</a>");
 					out.println("<a href='./views/compare/compare_1.jsp' class='btn btn-outline-primary'>比較</a>");
