@@ -1,12 +1,16 @@
 package model;
 
 
-public class good extends maker {
+public class good {
 	private String goodID;
 	private String goodsName;
 	private String goodsImg;
+	private String goodsAbout;
+	private String goodsFeatures;
+	private String featureImg;
 	private String value;
 	private String price;
+	
 	
 	public good() {
 		super();
@@ -37,6 +41,24 @@ public class good extends maker {
 	}
 	public void setGoodsImg(String goodsImg) {
 		this.goodsImg = goodsImg;
+	}
+	public String getGoodsAbout() {
+		return goodsAbout;
+	}
+	public void setGoodsAbout(String goodsAbout) {
+		this.goodsAbout = goodsAbout;
+	}
+	public String getGoodsFeatures() {
+		return goodsFeatures;
+	}
+	public void setGoodsFeatures(String goodsFeatures) {
+		this.goodsFeatures = goodsFeatures;
+	}
+	public String getFeatureImg() {
+		return featureImg;
+	}
+	public void setFeatureImg(String featureImg) {
+		this.featureImg = featureImg;
 	}
 	public String getPrice() {
 		return price;
