@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="model.desktop,model.user,model.good,model.laptop,java.util.ArrayList"%>
+
 <!DOCTYPE html>
 <html lang="ja" class="h-100">
 <head>
@@ -20,13 +22,18 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
+<link href="/PandC/css/carousel.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css"
+<link href="/PandC/css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/default.js"></script>
-
+	src="/PandC/js/default.js"></script>
+<%
+@SuppressWarnings("unchecked")
+ArrayList<user> name = (ArrayList<user>) session.getAttribute("u_info");
+String goodID = (String) session.getAttribute("goodID");
+int login_status = (Integer) session.getAttribute("login_status");
+%>
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -43,7 +50,7 @@
 					<div class="col-6 text-start">DELL ALIENWARE AW3821DW
 						37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)
 						<br><span class="text-success fs-4">小計：193,480円</span></div>
-					<div class="col-6 text-end"><a type="button" href="${pageContext.request.contextPath}/views/cart/cart_product.jsp" class="btn btn-primary my-3">カートの内容を確認する</a></div>
+					<div class="col-6 text-end"><a type="button" href="/PandC/views/cart/cart_product.jsp" class="btn btn-primary my-3">カートの内容を確認する</a></div>
 				</div>
 				<p>
 					<a href="../auth/home.jsp" class="btn btn-primary my-4">ホームページへ戻る</a>

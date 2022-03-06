@@ -32,15 +32,17 @@ public class GoodController extends HttpServlet {
 		String goodID = request.getParameter("goodID");
 		ArrayList<desktop> desktop = null;
 		ArrayList<laptop> laptop = null;
+		
 		HttpSession session = request.getSession();
 		session.setAttribute("goodID", goodID);
+		
 		GoodDao gd = new GoodDao();
 		if (goodID.matches("102.*")) {
 			desktop = gd.findDesktop(goodID);
 			session.setAttribute("desktop", desktop);
 		}else if (goodID.matches("101.*")) {
 			laptop = gd.findLaptop(goodID);
-			session.setAttribute("details", laptop);
+			session.setAttribute("laptop", laptop);
 		}
 		gd.connectionClose();
 		

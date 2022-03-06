@@ -20,12 +20,12 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
+<link href="/PandC/css/carousel.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css"
+<link href="/PandC/css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/default.js"></script>
+	src="/PandC/js/default.js"></script>
 
 </head>
 <body class="d-flex flex-column h-100">
