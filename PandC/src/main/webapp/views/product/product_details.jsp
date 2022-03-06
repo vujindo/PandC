@@ -21,19 +21,19 @@
 </script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/carousel.css"
+<link href="/PandC}/css/carousel.css"
 	rel="stylesheet">
-<link href="${pageContext.request.contextPath}/css/default.css"
+<link href="/PandC/css/default.css"
 	rel="stylesheet">
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/js/default.js"></script>
+	src="/PandC/js/default.js"></script>
 
 <%
 @SuppressWarnings("unchecked")
 ArrayList<user> name = (ArrayList<user>) session.getAttribute("u_info");
 String goodID = (String) session.getAttribute("goodID");
-
 int login_status = (Integer) session.getAttribute("login_status");
+
 String g_name = null;
 String g_img = null;
 String g_about = null;
@@ -46,9 +46,11 @@ String cpu = null;
 String cpuClock = null;
 String memory = null;
 String storage = null;
+ArrayList<laptop> laptop = null;
+ArrayList<desktop> desktop = null;
 if (goodID.matches("101.*")) {
-	ArrayList<laptop> goods = (ArrayList<laptop>) session.getAttribute("details");
-	for (laptop g : goods) {
+	laptop = (ArrayList<laptop>) session.getAttribute("laptop");
+	for (laptop g : laptop) {
 		g_name = g.getGoodsName();
 		g_img = g.getGoodsImg();
 		g_about = g.getGoodsAbout();
@@ -57,13 +59,12 @@ if (goodID.matches("101.*")) {
 		f_img = g.getFeatureImg();
 		g_features = g.getGoodsFeatures().split(",");
 		OS = g.getOS();
-		
 		memory = g.getMemory();
 		storage = g.getStorage();
 	}
 }else if (goodID.matches("102.*")) {
-	ArrayList<desktop> goods = (ArrayList<desktop>) session.getAttribute("details");
-	for (desktop g : goods) {
+	desktop = (ArrayList<desktop>) session.getAttribute("desktop");
+	for (desktop g : desktop) {
 		g_name = g.getGoodsName();
 		g_img = g.getGoodsImg();
 		g_about = g.getGoodsAbout();
@@ -111,7 +112,7 @@ if (goodID.matches("101.*")) {
 					<div class="py-3">
 						<a type="button" href="../cart/cart2.jsp"
 							class="btn btn-success px-5">カートに入れる</a> <a
-							href="${pageContext.request.contextPath}/views/compare/compare_1.jsp"
+							href="/PandC/views/compare/compare_1.jsp"
 							class="btn btn-primary px-3">製品を比較</a>
 					</div>
 				</div>

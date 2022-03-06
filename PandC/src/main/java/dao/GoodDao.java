@@ -62,6 +62,30 @@ public class GoodDao {
 		return ary;
 	}
 	
+	public ArrayList<good> findGood(String keyword) {
+		String sql = "SELECT *, makerName FROM goods INNER JOIN maker ON goods.makerID = maker.makerID WHERE goodsName LIKE ?";
+		ArrayList<good> ary = new ArrayList<good>();
+		ResultSet rs = null;
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1,"%" + keyword + "%");
+			state.execute();
+			rs = state.getResultSet();
+			while (rs.next()) {
+				good one = new good();
+				one.setGoodID(rs.getString("goodsID"));
+				one.setGoodsName(rs.getString("goodsName"));
+				one.setGoodsImg(rs.getString("goodsImg"));
+				one.setValue(rs.getString("goodsValue"));
+				one.setPrice(rs.getString("goodsPrice"));
+				ary.add(one);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ary;
+	}
+	
 	public ArrayList<desktop> findDesktop(String id) {
 		String sql = "SELECT * FROM goods INNER JOIN desktop ON goods.goodsID = desktop.goodsID WHERE goods.goodsID = ?";
 		ArrayList<desktop> ary = new ArrayList<desktop>();
@@ -94,7 +118,7 @@ public class GoodDao {
 	}
 	
 	public ArrayList<laptop> findLaptop(String id) {
-		String sql = "SELECT * FROM goods INNER JOIN desktop ON goods.goodsID = desktop.goodsID WHERE goods.goodsID = ?";
+		String sql = "SELECT * FROM goods INNER JOIN laptop ON goods.goodsID = laptop.goodsID WHERE goods.goodsID = ?";
 		ArrayList<laptop> ary = new ArrayList<laptop>();
 		ResultSet rs = null;
 		try {

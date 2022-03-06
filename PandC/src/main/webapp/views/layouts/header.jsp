@@ -63,8 +63,8 @@ int login_status = (Integer) session.getAttribute("login_status");
 					</ul>
 				</div>
 			</ul>
-			<form class='col-12 col-sm-4 mb-3 mb-lg-0 me-lg-3'>
-				<input type='search' class='form-control' placeholder='Search...'
+			<form class='col-12 col-sm-4 mb-3 mb-lg-0 me-lg-3' action="/PandC/SearchController" method="GET">
+				<input type='search' class='form-control' name="keyword" placeholder='Search...'
 					aria-label='Search'>
 			</form>
 			<%
