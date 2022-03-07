@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="model.user,model.good,model.cart,java.util.ArrayList"%>
+
 <!DOCTYPE html>
 <html lang="ja" class="h-100">
 <head>
@@ -26,6 +28,19 @@
 	rel="stylesheet">
 <script type="text/javascript"
 	src="/PandC/js/default.js"></script>
+<%
+@SuppressWarnings("unchecked")
+ArrayList<user> name = (ArrayList<user>) session.getAttribute("u_info");
+ArrayList<cart> c_list = (ArrayList<cart>) session.getAttribute("cartlist");
+int login_status = (Integer) session.getAttribute("login_status");
+int total_price = 0;
+int amount = c_list.size();
+for (cart g : c_list) {
+	int price = Integer.parseInt(g.getPrice());
+	total_price += price;
+	
+}
+%>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -52,20 +67,20 @@
 						<li class="list-group-item d-flex justify-content-between lh-sm">
 							<div>
 								<h6 class="my-0">小計（税別）</h6>
-								<small class="text-muted">(1つの 商品)</small>
-							</div> <span class="text-muted">175,891円</span>
+								<small class="text-muted">(<%=amount %>つの 商品)</small>
+							</div> <span class="text-muted"><%=(int) total_price - (int)(total_price*0.1) %>円</span>
 						</li>
 						<li class="list-group-item d-flex justify-content-between lh-sm">
 							<div>
 								<h6 class="my-0">消費税</h6>
-							</div> <span class="text-muted">17,589円</span>
+							</div> <span class="text-muted"><%=(int)(total_price*0.1) %>円</span>
 						</li>
 						<li
 							class="list-group-item d-flex justify-content-between bg-light">
 							<div class="text-success">
 								<h6 class="my-0 fw-bold">合計金額</h6>
 								<small>税込・配送料込</small>
-							</div> <span class="text-success fw-bold">193,480円</span>
+							</div> <span class="text-success fw-bold"><%=total_price %>円</span>
 						</li>
 					</ul>
 
@@ -91,39 +106,41 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td><img
-									src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg"
-									width="100px" alt=""></td>
-								<td class="">
-									<div class="row px-3">DELL ALIENWARE AW3821DW
-										37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)</div>
-									<div></div>
-									<div></div>
-								</td>
-								<td><select class="form-select me-3"
-									aria-label="Default select example">
-										<option selected value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-								</select></td>
-								<td class="px-3">
-									257,180円
-								</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td class="text-danger px-3">割引金額</td>
-								<td></td>
-								<td class="text-danger px-3">- 63,700円</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td class="fw-bold px-3">小計</td>
-								<td></td>
-								<td class="fw-bold px-3">193,480円</td>
-							</tr>
+						<%
+						for (cart g : c_list) {
+							
+							out.println("<tr>");
+							out.println("<td><img src='" + g.getGoodsImg() + "' width='100px' alt=''></td>");
+							out.println("<td class=''>");
+							out.println("<div class='row px-3'>"+ g.getGoodsName() +"</div>");
+							out.println("<div></div>");
+							out.println("<div></div>");
+							out.println("</td>");
+							out.println("<td><select class='form-select me-3' aria-label='Default select example'>");
+							out.println("<option value='0'>0</option>");
+							out.println("<option selected value='1'>1</option>");
+							out.println("<option value='2'>2</option>");
+							out.println("<option value='3'>3</option>");
+							out.println("<option value='4'>4</option>");
+							out.println("</select></td>");
+							out.println("<td class='px-3'>");
+							out.println(g.getValue() + "円");
+							out.println("</td>");
+							out.println("</tr>");
+							out.println("<tr>");
+							out.println("<td></td>");
+							out.println("<td class='text-danger px-3'>割引金額</td>");
+							out.println("<td></td>");
+							out.println("<td class='text-danger px-3'>" + (Integer.parseInt(g.getPrice()) - Integer.parseInt(g.getValue())) + "円</td>");
+							out.println("</tr>");
+							out.println("<tr>");
+							out.println("<td></td>");
+							out.println("<td class='fw-bold px-3'>小計</td>");
+							out.println("<td></td>");
+							out.println("<td class='fw-bold px-3'>"+ g.getPrice() +"円</td>");
+							out.println("</tr>");
+						}
+						%>
 						</tbody>
 					</table>
 				</div>

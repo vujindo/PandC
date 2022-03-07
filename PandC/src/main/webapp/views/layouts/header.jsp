@@ -71,14 +71,14 @@ int login_status = (Integer) session.getAttribute("login_status");
 			if (login_status == 0) {
 
 				out.println("<div class='text-end btn-group' role='group' aria-label='Basic example'>");
-				out.println("<button type='button' class='btn text-dark'>カート</button>");
+				out.println("<button type='button' class='btn text-dark'><a href='/PandC/CartController?action=0' class='nav-link link-dark p-0'>カート</a></button>");
 				out.println(
-				"<button type='button' class='btn text-dark'><a href='" + request.getContextPath() + "/login.jsp' class='nav-link link-dark'>ログイン</a></button>");
+				"<button type='button' class='btn text-dark'><a href='" + request.getContextPath() + "/login.jsp' class='nav-link link-dark p-0'>ログイン</a></button>");
 				out.println("<button type='button' class='btn text-dark'>JP/JA</button>");
 				out.println("</div>");
 			} else if (login_status == 1) {
 				out.println("<div class='text-end btn-group' role='group' aria-label='Basic example'>");
-				out.println("<a href='" + request.getContextPath() + "/views/cart/cart.jsp' type='button' class='btn text-dark'>カート</a>");
+				out.println("<a href='/PandC/CartController?action=0' type='button' class='btn text-dark'>カート</a>");
 				out.println("<button type='button' class='btn text-dark'>JP/JA</button>");
 				out.println("</div>");
 				out.println("<div class='dropdown text-end m-2'>");
