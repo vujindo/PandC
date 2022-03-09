@@ -59,7 +59,7 @@ public class ProfileController extends HttpServlet {
 			String town = request.getParameter("town");
 			String house_number = request.getParameter("house_number");
 			String building = request.getParameter("building");
-			String addr = prefectures + " " + city + " " + town + " " + house_number + " " + building;
+			String addr = prefectures + "," + city + "," + town + "," + house_number + "," + building;
 			String mail = null;
 			
 			HttpSession session = request.getSession();
@@ -83,6 +83,17 @@ public class ProfileController extends HttpServlet {
 			String expiration_year = request.getParameter("expiration_year");
 			String expiration_month = request.getParameter("expiration_month");
 			String cvv = request .getParameter("cvv");
+			String userID = null;
+			
+			HttpSession session = request.getSession();
+			@SuppressWarnings("unchecked")
+			ArrayList<user> user = (ArrayList<user>) session.getAttribute("u_info");
+			for (user u : user) {
+				userID = u.getUserID();
+			}
+			UserDao ud = new UserDao();
+			ud.changePayment(card_name, userID, card_number, expiration_year, expiration_month, cvv);
+			ud.connectionClose();
 		}
 		
 		response.sendRedirect("/PandC/views/auth/profile.jsp");

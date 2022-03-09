@@ -109,9 +109,15 @@ if (goodID.matches("101.*")) {
 						<span class="fs-3 fw-bold"><%= g_price %>円</span> 割引額 <span
 							class="text-danger fw-bold"><%= Integer.parseInt(g_value) -  Integer.parseInt(g_price)%>円</span> <br> 税込・配送料込
 					</div>
-					<div class="py-3">
-						<a type="button" href="/PandC/CartController?goodID=<%=goodID %>,action=1"
-							class="btn btn-success px-5">カートに入れる</a> <a
+					<div class="py-3 d-flex">
+						<form action='/PandC/CartController' method='GET' class="me-3">
+							<input type='hidden' name='action' value='1'>
+							<input type='hidden' name='goodID' value='<%=goodID%>'>
+							<input type='hidden' name='goodName' value='<%=g_name%>'>
+							<input type='hidden' name='price' value='<%=g_price%>'>
+							<button type='submit' class='btn btn-success px-5'>カートに入れる</button>
+						</form>
+						<a
 							href="/PandC/views/compare/compare_1.jsp"
 							class="btn btn-primary px-3">製品を比較</a>
 					</div>

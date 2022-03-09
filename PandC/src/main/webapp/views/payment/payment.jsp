@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="model.user,model.good,model.cart,java.util.ArrayList"%>
+
 <html lang="ja" class="h-100">
 <head>
 <meta charset="UTF-8">
@@ -20,7 +22,13 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="css/carousel.css" rel="stylesheet">
-
+<%
+@SuppressWarnings("unchecked")
+int login_status = (Integer) session.getAttribute("login_status");
+int amount = (Integer) session.getAttribute("amount");
+int sale_off = (Integer) session.getAttribute("sale_off");
+int total_price = (Integer) session.getAttribute("t_price");
+%>
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -37,34 +45,35 @@
 					role="progressbar" style="width: 66%;" aria-valuenow="100"
 					aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<form action="confirm.jsp" method="POST" class="needs-validation"
+			<form action="<%= request.getContextPath() %>/OrderController" method="POST" class="needs-validation"
 				novalidate>
+				<input type="hidden" name="payment" value="1">
 				<div class="row g-5 mb-5">
 					<div class="col-md-5 col-lg-4 order-md-last">
 						<ul class="list-group my-3">
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
-									<h6 class="my-0 text-danger">63,700円 割引額合計</h6>
+									<h6 class="my-0 text-danger"><%=sale_off %>円 割引額合計</h6>
 									<small class="text-muted">Brief description</small>
 								</div>
 							</li>
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
 									<h6 class="my-0">小計（税別）</h6>
-									<small class="text-muted">(1つの 商品)</small>
-								</div> <span class="text-muted">175,891円</span>
+									<small class="text-muted">(<%=amount %>つの 商品)</small>
+								</div> <span class="text-muted"><%=(int) total_price - (int)(total_price*0.1) %>円</span>
 							</li>
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
 									<h6 class="my-0">消費税</h6>
-								</div> <span class="text-muted">17,589円</span>
+								</div> <span class="text-muted"><%=(int)(total_price*0.1) %>円</span>
 							</li>
 							<li
 								class="list-group-item d-flex justify-content-between bg-light">
 								<div class="text-success">
 									<h6 class="my-0 fw-bold">合計金額</h6>
 									<small>税込・配送料込</small>
-								</div> <span class="text-success fw-bold">193,480円</span>
+								</div> <span class="text-success fw-bold"><%=total_price %>円</span>
 							</li>
 						</ul>
 
@@ -100,7 +109,7 @@
 						<div class="row gy-3">
 							<div class="col-md-6">
 								<label for="cc-name" class="form-label">カード名義 </label> <input
-									type="text" class="form-control" id="cc-name"
+									type="text" class="form-control" id="cc-name" name="card_name"
 									placeholder="例：デンシタロウ" required> <small
 									class="text-muted">カード上の表記通り</small>
 								<div class="invalid-feedback">Name on card is required</div>
@@ -108,7 +117,7 @@
 
 							<div class="col-md-6">
 								<label for="cc-number" class="form-label">カード番号</label> <input
-									type="text" class="form-control" id="cc-number" placeholder=""
+									type="text" class="form-control" id="cc-number" name="card_number" placeholder=""
 									required>
 								<div class="invalid-feedback">Credit card number is
 									required</div>
@@ -116,7 +125,7 @@
 
 							<div class="col-md-3">
 								<label for="expiration_year" class="form-label">有効期限 年 </label><select
-									class="form-select" id="expiration_year" required>
+									class="form-select" id="expiration_year" name="expiration_year" required>
 									<option selected="selected" value="">有効期限 年</option>
 									<option value="2022">2022</option>
 									<option value="2023">2023</option>
@@ -140,7 +149,7 @@
 
 							<div class="col-md-3">
 								<label for="expiration_month" class="form-label">有効期限 月
-								</label> <select class="form-select" id="expiration_month" required>
+								</label> <select class="form-select" id="expiration_month" name="expiration_month" required>
 									<option selected="selected" value="">有効期限 月</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -162,7 +171,7 @@
 
 							<div class="col-md-3">
 								<label for="cc-cvv" class="form-label">セキュリティコード </label> <input
-									type="text" class="form-control" id="cc-cvv" placeholder=""
+									type="text" class="form-control" id="cc-cvv" name="cvv" placeholder=""
 									required><small class="text-muted">カード裏面（AMEXは前面）の番号をご入力ください</small>
 								<div class="invalid-feedback">Security code required</div>
 							</div>

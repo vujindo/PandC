@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="model.user,model.good,model.cart,java.util.ArrayList"%>
+
 <html lang="ja" class="h-100">
 <head>
 <meta charset="UTF-8">
@@ -20,6 +22,32 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="css/carousel.css" rel="stylesheet">
+<%
+@SuppressWarnings("unchecked")
+int login_status = (Integer) session.getAttribute("login_status");
+int amount = (Integer) session.getAttribute("amount");
+int sale_off = (Integer) session.getAttribute("sale_off");
+int total_price = (Integer) session.getAttribute("t_price");
+ArrayList<String> p_method = (ArrayList<String>) session.getAttribute("paymentMethod");
+ArrayList<String> shipping = (ArrayList<String>) session.getAttribute("shipping");
+String name = shipping.get(0);
+String mail = shipping.get(1);
+String zip = shipping.get(2);
+String prefectures = shipping.get(3);
+String city = shipping.get(4);
+String town = shipping.get(5);
+String house_number = shipping.get(6);
+String building = shipping.get(7);
+String tel = shipping.get(8);
+String card_name = p_method.get(0);
+String card_number = p_method.get(1);
+String expiration_year = p_method.get(2);
+String expiration_month = p_method.get(3);
+String cvv = p_method.get(4);
+
+ArrayList<cart> c_list = (ArrayList<cart>) session.getAttribute("cartlist");
+
+%>
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -44,28 +72,27 @@
 						<ul class="list-group my-3">
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
-									<h6 class="my-0 text-danger">63,700円 割引額合計</h6>
+									<h6 class="my-0 text-danger"><%=sale_off %>円 割引額合計</h6>
 									<small class="text-muted">Brief description</small>
-
 								</div>
 							</li>
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
 									<h6 class="my-0">小計（税別）</h6>
-									<small class="text-muted">(1つの 商品)</small>
-								</div> <span class="text-muted">175,891円</span>
+									<small class="text-muted">(<%=amount %>つの 商品)</small>
+								</div> <span class="text-muted"><%=(int) total_price - (int)(total_price*0.1) %>円</span>
 							</li>
 							<li class="list-group-item d-flex justify-content-between lh-sm">
 								<div>
 									<h6 class="my-0">消費税</h6>
-								</div> <span class="text-muted">17,589円</span>
+								</div> <span class="text-muted"><%=(int)(total_price*0.1) %>円</span>
 							</li>
 							<li
 								class="list-group-item d-flex justify-content-between bg-light">
 								<div class="text-success">
 									<h6 class="my-0 fw-bold">合計金額</h6>
 									<small>税込・配送料込</small>
-								</div> <span class="text-success fw-bold">193,480円</span>
+								</div> <span class="text-success fw-bold"><%=total_price %>円</span>
 							</li>
 						</ul>
 
@@ -83,32 +110,32 @@
 						<div class="row g-3">
 							<div class="col-sm-4">
 								<p>
-									<strong>名前</strong> <br>電子 太郎
+									<strong>名前</strong> <br><%=name %>
 								</p>
 							</div>
 
 							<div class="col-sm-4">
 								<p>
-									<strong>メールアドレス</strong> <br>sugawara@gmail.com
+									<strong>メールアドレス</strong> <br><%=mail %>
 								</p>
 							</div>
 
 							<div class="col-sm-4">
 								<p>
-									<strong>電話番号</strong> <br>08077989157
+									<strong>電話番号</strong> <br><%=tel %>
 								</p>
 							</div>
 
 							<div class="col-sm-12">
 								<p>
-									<strong>配送先</strong> <br>〒169-0073 <br>
-									東京都新宿区百人町１丁目２５−４ 日本電子専門学校 本校
+									<strong>配送先</strong> <br>〒<%=zip %> <br>
+									<% out.println(prefectures + city + town + house_number); %>
 								</p>
 							</div>
 
 							<div class="col-sm-12">
 								<p>
-									<strong>建物名, 部屋番号</strong> <br>日本電子専門学校 本校
+									<strong>建物名, 部屋番号</strong> <br><%=building %>
 								</p>
 							</div>
 
@@ -120,13 +147,13 @@
 
 							<div class="col-sm-4">
 								<p>
-									<strong>カード名義</strong> <br>デンシタロウ
+									<strong>カード名義</strong> <br><%=card_name %>
 								</p>
 							</div>
 
 							<div class="col-sm-4">
 								<p>
-									<strong>カード番号</strong> <br> *****1111
+									<strong>カード番号</strong> <br> <%=card_number %>
 								</p>
 							</div>
 						</div>
@@ -134,15 +161,17 @@
 						<div>
 							<h4>配送方法</h4>
 							<p>標準配送</p>
-							<div class="row p-2">
-								<div class="col-2 text-start">
-									<img src="https://snpi.dell.com/snp/images/products/large/ja-jp~210-AXNG_v1/210-AXNG_v1.jpg" width="100" height="100" alt="">
-								</div>
-								<div class="col-6">
-									DELL ALIENWARE AW3821DW
-									37.5インチゲーミングモニター(WQHD+/曲面/21:9/IPS非光沢/1MS/144HZ/G-SYNC)
-									<br>数量　1
-								</div>
+							<%
+							for (cart g : c_list) {
+								
+								out.println("<div class='row p-2'>");
+								out.println("<div class='col-2 text-start'>");
+								out.println("<img src='" + g.getGoodsImg() + "' width='100px' height='100' alt=''>");
+								out.println("</div>");
+								out.println("<div class='col-8'>"+ g.getGoodsName() +"</div>");
+								
+							}
+							%>
 							<div class="row">
 								<div class="col-2 text-start"></div>
 								<div class="col-6 bg-light p-2">

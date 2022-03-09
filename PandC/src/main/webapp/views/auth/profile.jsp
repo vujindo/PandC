@@ -28,21 +28,26 @@
 <%
 @SuppressWarnings("unchecked")
 ArrayList<user> name = (ArrayList<user>) session.getAttribute("u_info");
+String uid = null;
 String u_name[];
 String last_name = null;
 String first_name = null;
 String u_mail = null;
 String tel = null;
 String zip = null;
-String addr = null;
+String[] addr = null;
 for (user u : name) {
+	uid = u.getUserID();
 	u_name = u.getUserName().split(" ",2);
 	last_name = u_name[0];
 	first_name = u_name[1];
 	u_mail = u.getUserMail();
 	tel = u.getTel();
 	zip = u.getZip();
-	addr = u.getAddress();
+	if (u.getAddress() == null)
+		addr = null;
+	else
+		addr = u.getAddress().split(",");
 }
 int login_status = (Integer) session.getAttribute("login_status");
 %>
@@ -165,7 +170,8 @@ int login_status = (Integer) session.getAttribute("login_status");
 							<div class="accordion-body">
 							
 								<% 
-								if (zip != null || zip != ""){
+								if (zip == null){
+								}else {
 									out.println("<p>");
 									out.println("<strong>郵便番号</strong> <br>");
 									out.println(zip);
@@ -173,10 +179,14 @@ int login_status = (Integer) session.getAttribute("login_status");
 								}
 								%>
 								<% 
-								if (addr != null || addr != ""){
+								if (addr == null){
+								}else {
 									out.println("<p>");
 									out.println("<strong>アドレス</strong> <br>");
-									out.println(addr);
+									for(String s : addr) {
+										out.print(s + " ");
+									}
+									out.println();
 									out.println("<p>");
 								}
 								%>
@@ -200,7 +210,7 @@ int login_status = (Integer) session.getAttribute("login_status");
 													<div class="col-sm-4">
 														<label for="zip1" class="form-label">郵便番号 (半角数字) </label><input
 															type="text" class="form-control" id="zip1" name="zip"
-															placeholder="" maxlength="7" required>
+															placeholder="" value="" maxlength="7" required>
 														<div class="invalid-feedback">Please enter your
 															shipping address.</div>
 													</div>
@@ -266,7 +276,7 @@ int login_status = (Integer) session.getAttribute("login_status");
 													<div class="col-sm-4">
 														<label for="city" class="form-label">市区町村</label> <input
 															type="text" class="form-control" id="city" name="city"
-															placeholder="新宿区" required>
+															placeholder="新宿区" value="" required>
 														<div class="invalid-feedback">Please provide a valid
 															state.</div>
 													</div>
@@ -274,20 +284,20 @@ int login_status = (Integer) session.getAttribute("login_status");
 													<div class="col-sm-4">
 														<label for="town" class="form-label">町村名</label><input
 															type="text" class="form-control" id="town" name="town"
-															placeholder="百人町" required>
+															placeholder="百人町" value="" required>
 														<div class="invalid-feedback">Zip code required.</div>
 													</div>
 
 													<div class="col-sm-6">
 														<label for="house_number" class="form-label">番地（数字は半角）
 														</label> <input type="text" class="form-control" id="house_number"
-															name="house_number" placeholder="1-1-1">
+															name="house_number" placeholder="1-1-1" value="">
 													</div>
 
 													<div class="col-sm-6">
 														<label for="building" class="form-label">建物名, 部屋番号
 														</label><input type="text" class="form-control" id="building"
-															name="building" placeholder="日本電子専門学校">
+															name="building" placeholder="日本電子専門学校" value="">
 													</div>
 													<input type="hidden" name="form" value="2">
 													<div class="text-center my-4">
@@ -328,7 +338,8 @@ int login_status = (Integer) session.getAttribute("login_status");
 												data-bs-dismiss="offcanvas" aria-label="Close"></button>
 										</div>
 										<div class="offcanvas-body">
-											<form class="needs-validation" novalidate>
+											<form class="needs-validation" action="" method="POST" novalidate>
+												<input type="hidden" name="form" value="3">
 												<div class="my-3">
 													<div class="form-check">
 														<input id="credit" name="paymentMethod" type="radio" name="payment"
