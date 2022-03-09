@@ -50,6 +50,17 @@ public class CartController extends HttpServlet {
 				path = "views/cart/cart_product.jsp";
 			}
 			
+		}else if (action.equals("2")) {
+			String amount = request.getParameter("amount");
+			String id = request.getParameter("cartID");
+			cd.updateCart(id,amount);
+			ArrayList<cart> clist = cd.findCart();
+			if (clist.isEmpty()) {
+				path = "views/cart/cart.jsp";
+			}else {
+				session.setAttribute("cartlist", clist);
+				path = "views/cart/cart_product.jsp";
+			}
 		}
 		
 		response.sendRedirect(path);

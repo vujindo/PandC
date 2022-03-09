@@ -61,6 +61,7 @@ public class UserDao {
 			while (rs.next()) {
 				if (rs.getString("password").equals(password)) {
 					user u = new user();
+					u.setUserID(rs.getString("userID"));
 					u.setUserName(rs.getString("userName"));
 					u.setUserMail(rs.getString("userMail"));
 					u.setPassword(rs.getString("password"));
@@ -112,17 +113,17 @@ public class UserDao {
 		}
 	}
 	
-	public void changePayment(String zip, String addr, String mail) {
-		String sql = "UPDATE user SET postNumber = ? , address = ? WHERE userMail = ?";
-		
+	public void changePayment(String card_name,String userID, String card_number, String expiration_year, String expiration_month, String cvv) {
+		String sql = "INSERT INTO credit_card VALUES(?,?,?,?,?)";
 		try {
-			PreparedStatement state = con.prepareStatement(sql);
-			state.setString(1, zip);
-			state.setString(2, addr);
-			state.setString(3, mail);
-			state.executeUpdate();
-		} catch (SQLException e) {
-			// TODO 自動生成された catch ブロック
+			PreparedStatement pst = con.prepareStatement(sql);
+			pst.setString(1, card_name);
+			pst.setString(2, userID);
+			pst.setString(3, card_number);
+			pst.setString(4, expiration_year+ "/" +expiration_month);
+			pst.setString(5, cvv);
+			pst.executeUpdate();
+		}catch(SQLException e) {
 			e.printStackTrace();
 		}
 	}

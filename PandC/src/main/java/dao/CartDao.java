@@ -62,11 +62,25 @@ public class CartDao {
 				one.setGoodsImg(rs.getString("goodsImg"));
 				one.setPrice(rs.getString("goodsPrice"));
 				one.setValue(rs.getString("goodsValue"));
+				one.setAmount(rs.getString("amount"));
+				one.setCartID(rs.getString("cartID"));
 				ary.add(one);
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return ary;
+	}
+	
+	public void updateCart(String id,String amount) {
+		String sql = "UPDATE cart SET amount = ? WHERE cartID = ?";
+		try {
+			PreparedStatement state = con.prepareStatement(sql);
+			state.setString(1, amount);
+			state.setString(2, id);
+			state.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }

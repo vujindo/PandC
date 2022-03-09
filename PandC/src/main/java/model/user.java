@@ -3,6 +3,8 @@ package model;
 import java.io.Serializable;
 
 public class user implements Serializable {
+	private String userID;
+	
 	private String userName;
 	private String userMail;
 	private String password;
@@ -20,6 +22,14 @@ public class user implements Serializable {
 		this.userName = userName;
 		this.userMail = userMail;
 		this.password = password;
+	}
+	
+	public String getUserID() {
+		return userID;
+	}
+
+	public void setUserID(String userID) {
+		this.userID = userID;
 	}
 
 	public String getUserName() {
